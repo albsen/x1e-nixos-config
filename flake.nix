@@ -104,7 +104,7 @@
           device:
           nixpkgs.lib.nixosSystem {
             modules = [
-              "${nixpkgs-patched}/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix"
+              "${nixpkgs-patched}/nixos/modules/installer/cd-dvd/installation-cd-graphical-calamares-gnome.nix"
               ./iso.nix
               ./modules/x1e80100.nix
               ./modules/el2.nix
