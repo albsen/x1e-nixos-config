@@ -1,6 +1,19 @@
 # NixOS configs for Snapdragon X Elite based devices
 
-Note that I only have the Lenovo Yoga Slim 7x, so the repo will be focused around this device for the foreseeable future.
+This repo targets the T14S 64GB RAM OLED snapdragon XElite laptop.
+
+Add tcblaunch.exe by placing it in the root of this repo and running.
+
+```console
+./scripts/add-tcblaunch.sh
+```
+
+Building the iso:
+
+```console
+nix build '.#lenovo-thinkpad-t14s-iso' '.#slbounce' '.#qebspil'
+```
+
 
 ## Other projects with support for Snapdragon X Elite devices
 
