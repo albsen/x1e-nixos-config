@@ -77,6 +77,7 @@
           localSystem.system = buildSystem;
           crossSystem.system = "aarch64-linux";
           allowUnsupportedSystem = true;
+          config.allowUnfreePredicate = pkg: nixpkgs.lib.getName pkg == "tcblaunch.exe";
         };
 
         treefmtEval =
@@ -106,6 +107,7 @@
               "${nixpkgs-patched}/nixos/modules/installer/cd-dvd/installation-cd-minimal.nix"
               ./iso.nix
               ./modules/x1e80100.nix
+              ./modules/el2.nix
               ./modules/common.nix
               {
                 nixpkgs.pkgs = pkgs-cross;

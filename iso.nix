@@ -5,6 +5,19 @@
   ...
 }:
 
+let
+  tcblaunch = pkgs.requireFile {
+    name = "tcblaunch.exe";
+    sha256 = "sha256-RjUg4ZWB2pZINLTwexkwNmXccB3jHGrXSO+MvRMz5Ug=";
+    message = ''
+      tcblaunch.exe is required to build the EL2-capable ISO.
+
+      Place tcblaunch.exe in the repository root and run:
+
+        ./scripts/add-tcblaunch.sh
+    '';
+  };
+in
 {
   image.baseName =
     let
@@ -33,4 +46,17 @@
 
   # Include this repo in the image
   systemd.tmpfiles.rules = [ "L /x1e-nixos-config - - - - ${./.}" ];
+
+  x1e.el2.enable = lib.mkDefault true;
+
+  isoImage.contents = [
+    {
+      source = tcblaunch;
+      target = "tcblaunch.exe";
+    }
+    {
+      source = "${pkgs.slbounce}/slbounce.efi";
+      target = "boot/slbounce.efi";
+    }
+  ];
 }
