@@ -7,6 +7,7 @@
 
 let
   cfg = config.hardware;
+  thinkpadT14sEnabled = cfg.lenovo-thinkpad-t14s.enable || cfg.lenovo-thinkpad-t14s-oled.enable;
 in
 {
   options.x1e.el2.enable = lib.mkEnableOption ''
@@ -21,6 +22,8 @@ in
 
   config = lib.mkIf config.x1e.el2.enable {
     specialisation.el2.configuration = {
+      system.nixos.tags = [ "el2" ];
+      boot.loader.grub.configurationName = "NixOS EL2";
       hardware.deviceTree.name = lib.replaceString ".dtb" "-el2.dtb" config.hardware.deviceTree.name;
 
       boot.kernelParams = [ "id_aa64mmfr0.ecv=1" ];
@@ -39,7 +42,7 @@ in
         # Listed by retrieval command but not currently present in firmware files
         # "qcom/x1e80100/LENOVO/83ED/cdsp_dtbs.elf"
       ])
-      (lib.mkIf cfg.lenovo-thinkpad-t14s.enable [
+      (lib.mkIf thinkpadT14sEnabled [
         "qcom/x1e80100/LENOVO/21N1/qccdsp8380.mbn"
         "qcom/x1e80100/LENOVO/21N1/qcdxkmsuc8380.mbn"
         "qcom/x1e80100/LENOVO/21N1/qcvss8380.mbn"

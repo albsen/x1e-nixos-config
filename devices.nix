@@ -7,4 +7,8 @@
     displayName = "Lenovo ThinkPad T14s Gen 6";
     deviceTreeName = "qcom/x1e78100-lenovo-thinkpad-t14s.dtb";
   };
+  lenovo-thinkpad-t14s-oled = {
+    displayName = "Lenovo ThinkPad T14s Gen 6 OLED";
+    deviceTreeName = "qcom/x1e78100-lenovo-thinkpad-t14s-oled.dtb";
+  };
 }

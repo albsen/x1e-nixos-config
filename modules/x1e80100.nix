@@ -8,6 +8,7 @@
 let
   devices = import ../devices.nix;
   cfg = config.hardware;
+  thinkpadT14sEnabled = cfg.lenovo-thinkpad-t14s.enable || cfg.lenovo-thinkpad-t14s-oled.enable;
 in
 {
   options.hardware = lib.mapAttrs (_: device: {
@@ -78,7 +79,7 @@ in
               "panel_samsung_atna33xc20"
             ])
 
-            (lib.mkIf cfg.lenovo-thinkpad-t14s.enable [
+            (lib.mkIf thinkpadT14sEnabled [
               # Needed for t14s LCD display
               "pwm_bl"
               "leds_qcom_lpg"
@@ -108,7 +109,7 @@ in
               "console=tty1"
             ])
 
-            (lib.mkIf cfg.lenovo-thinkpad-t14s.enable [
+            (lib.mkIf thinkpadT14sEnabled [
               "mem=31G"
             ])
           ];
@@ -120,7 +121,7 @@ in
           boot.kernelPackages = pkgs.x1e80100-linux;
 
           boot.initrd.extraFirmwarePaths = lib.mkMerge [
-            (lib.mkIf cfg.lenovo-thinkpad-t14s.enable [
+            (lib.mkIf thinkpadT14sEnabled [
               # Basically all of the x1e80100 modules. Avoids fw_load errors in initrd.
               "qcom/x1e80100/gen70500_zap.mbn"
               "qcom/x1e80100/LENOVO/21N1/cdspr.jsn"
