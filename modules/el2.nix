@@ -17,12 +17,10 @@ let
     "id_aa64mmfr0.ecv=1"
     "iommu.strict=1"
     "mitigations=off"
-    "quiet"
-    "splash"
-    "console=tty0"
     "crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M"
     "module_blacklist=algif_aead,esp4,esp6,rxrpc"
     "lsm=landlock,yama,bpf"
+    "console=tty0"
   ];
 in
 {

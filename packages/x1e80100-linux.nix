@@ -13,5 +13,5 @@ linuxPackagesFor (linuxManualConfig {
     hash = "sha256-WHEmUzzOlOi+Hi2oLUrmYxuFe3r2jNMo3/cwIXCafU8=";
   };
   version = "7.0.12";
-  configfile = ../steev_config;
+  configfile = ../working_el2.config;
 })
