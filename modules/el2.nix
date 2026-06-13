@@ -8,6 +8,20 @@
 let
   cfg = config.hardware;
   thinkpadT14sEnabled = cfg.lenovo-thinkpad-t14s.enable || cfg.lenovo-thinkpad-t14s-oled.enable;
+  thinkpadT14sKernelParams = [
+    "clk_ignore_unused"
+    "pd_ignore_unused"
+    "root=fstab"
+    "cma=128M"
+    "efi=noruntime"
+    "id_aa64mmfr0.ecv=1"
+    "iommu.strict=1"
+    "mitigations=off"
+    "quiet"
+    "splash"
+    "console=tty0"
+    "crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M"
+  ];
 in
 {
   options.x1e.el2.enable = lib.mkEnableOption ''
@@ -25,22 +39,21 @@ in
       system.nixos.tags = [ "el2" ];
       boot.loader.grub.configurationName = "NixOS EL2";
       hardware.deviceTree.name = lib.replaceString ".dtb" "-el2.dtb" config.hardware.deviceTree.name;
-
-      boot.kernelParams = [ "id_aa64mmfr0.ecv=1" ];
+      boot.kernelParams = lib.mkIf thinkpadT14sEnabled (lib.mkOverride 10 thinkpadT14sKernelParams);
     };
 
     specialisation.oled-el1.configuration = lib.mkIf cfg.lenovo-thinkpad-t14s.enable {
       system.nixos.tags = [ "oled-el1" ];
       boot.loader.grub.configurationName = "NixOS OLED EL1";
       hardware.deviceTree.name = "qcom/x1e78100-lenovo-thinkpad-t14s-oled.dtb";
+      boot.kernelParams = lib.mkOverride 10 thinkpadT14sKernelParams;
     };
 
     specialisation.oled-el2.configuration = lib.mkIf cfg.lenovo-thinkpad-t14s.enable {
       system.nixos.tags = [ "oled-el2" ];
       boot.loader.grub.configurationName = "NixOS OLED EL2";
       hardware.deviceTree.name = "qcom/x1e78100-lenovo-thinkpad-t14s-oled-el2.dtb";
-
-      boot.kernelParams = [ "id_aa64mmfr0.ecv=1" ];
+      boot.kernelParams = lib.mkOverride 10 thinkpadT14sKernelParams;
     };
 
     # Firmware to load is retrieved by running

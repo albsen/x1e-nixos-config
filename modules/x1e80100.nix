@@ -9,6 +9,20 @@ let
   devices = import ../devices.nix;
   cfg = config.hardware;
   thinkpadT14sEnabled = cfg.lenovo-thinkpad-t14s.enable || cfg.lenovo-thinkpad-t14s-oled.enable;
+  thinkpadT14sKernelParams = [
+    "clk_ignore_unused"
+    "pd_ignore_unused"
+    "root=fstab"
+    "cma=128M"
+    "efi=noruntime"
+    "id_aa64mmfr0.ecv=1"
+    "iommu.strict=1"
+    "mitigations=off"
+    "quiet"
+    "splash"
+    "console=tty0"
+    "crashkernel=2G-4G:320M,4G-32G:512M,32G-64G:1024M,64G-128G:2048M,128G-:4096M"
+  ];
 in
 {
   options.hardware = lib.mapAttrs (_: device: {
@@ -95,7 +109,13 @@ in
           ];
 
           boot.kernelParams = lib.mkMerge [
-            [
+            (lib.mkIf thinkpadT14sEnabled (
+              lib.mkForce (
+                thinkpadT14sKernelParams ++ lib.optionals cfg.lenovo-thinkpad-t14s.enable [ "mem=31G" ]
+              )
+            ))
+
+            (lib.mkIf cfg.lenovo-yoga-slim7x.enable [
               "pd_ignore_unused"
               "clk_ignore_unused"
 
@@ -104,17 +124,11 @@ in
               # Linux local privilege escalation using esp4, esp6, rxrpc:
               # https://github.com/V4bel/dirtyfrag
               "module_blacklist=algif_aead,esp4,esp6,rxrpc"
-            ]
 
-            (lib.mkIf cfg.lenovo-yoga-slim7x.enable [
               # Needed since 4c3d9c134892c4158867075c840b81a5ed28af1f ("arm64: dts: qcom:
               # x1e80100: Add debug uart to Lenovo Yoga Slim 7x"), I guess systemd picks
               # UART as the only console, and it does not output logs on the screen.
               "console=tty1"
-            ])
-
-            (lib.mkIf thinkpadT14sEnabled [
-              "mem=31G"
             ])
           ];
 
