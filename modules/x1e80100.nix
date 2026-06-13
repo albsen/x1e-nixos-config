@@ -39,6 +39,10 @@ in
             "qcom_iris"
           ];
 
+          boot.loader.grub.configurationName =
+            lib.mkIf thinkpadT14sEnabled
+              (lib.mkDefault (if cfg.lenovo-thinkpad-t14s-oled.enable then "NixOS OLED EL1" else "NixOS EL1"));
+
           boot.initrd.includeDefaultModules = false;
           boot.initrd.systemd.tpm2.enable = false; # This also pulls in some modules our kernel is not build with.
           boot.initrd.availableKernelModules = lib.mkMerge [

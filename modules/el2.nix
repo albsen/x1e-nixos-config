@@ -29,6 +29,20 @@ in
       boot.kernelParams = [ "id_aa64mmfr0.ecv=1" ];
     };
 
+    specialisation.oled-el1.configuration = lib.mkIf cfg.lenovo-thinkpad-t14s.enable {
+      system.nixos.tags = [ "oled-el1" ];
+      boot.loader.grub.configurationName = "NixOS OLED EL1";
+      hardware.deviceTree.name = "qcom/x1e78100-lenovo-thinkpad-t14s-oled.dtb";
+    };
+
+    specialisation.oled-el2.configuration = lib.mkIf cfg.lenovo-thinkpad-t14s.enable {
+      system.nixos.tags = [ "oled-el2" ];
+      boot.loader.grub.configurationName = "NixOS OLED EL2";
+      hardware.deviceTree.name = "qcom/x1e78100-lenovo-thinkpad-t14s-oled-el2.dtb";
+
+      boot.kernelParams = [ "id_aa64mmfr0.ecv=1" ];
+    };
+
     # Firmware to load is retrieved by running
     # `find /sys/firmware/devicetree -name firmware-name -exec cat {} + | xargs -0n1`
     # as specified in the qebspil README.
