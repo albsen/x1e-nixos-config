@@ -53,6 +53,19 @@ in
   # Include this repo in the image
   systemd.tmpfiles.rules = [ "L /x1e-nixos-config - - - - ${./.}" ];
 
+  # Some firmware/USB boot paths expose the labeled boot media as a vfat
+  # partition rather than the iso9660 image. The initrd supports both.
+  lib.isoFileSystems."/iso" = lib.mkImageMediaOverride {
+    device =
+      if config.boot.initrd.systemd.enable then
+        "/dev/disk/by-label/${config.isoImage.volumeID}"
+      else
+        "/dev/root";
+    fsType = "auto";
+    neededForBoot = true;
+    noCheck = true;
+  };
+
   x1e.el2.enable = lib.mkDefault true;
 
   isoImage.contents = [
