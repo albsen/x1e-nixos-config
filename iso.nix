@@ -24,6 +24,12 @@ in
       deviceTreeBaseName = builtins.elemAt (lib.splitString "." (builtins.baseNameOf config.hardware.deviceTree.name)) 0;
     in
     lib.mkForce "nixos-${deviceTreeBaseName}";
+
+  # Keep this within the short label limit exposed by some USB/firmware paths;
+  # otherwise the initrd may search for the full label while the device appears
+  # as a truncated label such as NIXOS-MINIM.
+  isoImage.volumeID = lib.mkForce "NIXOS_X1E";
+
   boot.supportedFilesystems.zfs = lib.mkForce false;
   boot.supportedFilesystems.cifs = lib.mkForce false;
 
