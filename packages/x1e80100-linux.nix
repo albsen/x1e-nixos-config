@@ -58,6 +58,14 @@ linuxPackagesFor (buildLinux {
       };
     }
 
+    {
+      name = "clk: qcom: x1e80100-dispcc: Stop disp_cc_mdss_mdp_clk_src from getting parked";
+      patch = fetchpatch {
+        url = "https://github.com/jglathe/linux_ms_dev_kit/commit/8c5395f5010c.patch";
+        hash = "sha256-govcSAowTVzAn8spzC/Fk9F1iyC9spPKhiEwmwP71to=";
+      };
+    }
+
     # Camera fixups
     {
       name = "arm64: dts: qcom: x1e80100-slim7x: align regulators with AeoB specification";
