@@ -53,6 +53,29 @@ in
   # Include this repo in the image
   systemd.tmpfiles.rules = [ "L /x1e-nixos-config - - - - ${./.}" ];
 
+  environment.systemPackages = with pkgs; [
+    cryptsetup
+    dosfstools
+    efibootmgr
+    e2fsprogs
+    git
+    gptfdisk
+    htop
+    jq
+    lsof
+    neovim
+    networkmanager
+    nvme-cli
+    parted
+    pciutils
+    ripgrep
+    rsync
+    strace
+    tcpdump
+    usbutils
+    vim
+  ];
+
   # Some firmware/USB boot paths expose the labeled boot media as a vfat
   # partition rather than the iso9660 image. The initrd supports both.
   lib.isoFileSystems."/iso" = lib.mkImageMediaOverride {
