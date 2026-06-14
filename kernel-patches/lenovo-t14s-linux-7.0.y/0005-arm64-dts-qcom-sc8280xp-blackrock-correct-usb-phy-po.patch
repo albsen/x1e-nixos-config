@@ -1,0 +1,44 @@
+From 8d1b68a92a505aecae38b13480c9d78f0fc2b4dd Mon Sep 17 00:00:00 2001
+From: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+Date: Wed, 20 May 2026 09:47:14 +0200
+Subject: [PATCH] arm64: dts: qcom: sc8280xp-blackrock: correct usb phy power
+ supply
+
+correct the power supplies to what the CRD says, got confirmed by Xilin Wu <sophon@radxa.com>
+
+link: https://lore.kernel.org/all/ec4d11b5-7a82-4e7f-bab6-290d1055f1d8@oldschoolsolutions.biz/
+
+Signed-off-by: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+---
+ arch/arm64/boot/dts/qcom/sc8280xp-microsoft-blackrock.dts | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/arch/arm64/boot/dts/qcom/sc8280xp-microsoft-blackrock.dts b/arch/arm64/boot/dts/qcom/sc8280xp-microsoft-blackrock.dts
+index fbc3f53ba676..b208cd49ead3 100644
+--- a/arch/arm64/boot/dts/qcom/sc8280xp-microsoft-blackrock.dts
++++ b/arch/arm64/boot/dts/qcom/sc8280xp-microsoft-blackrock.dts
+@@ -936,8 +936,8 @@ &usb_0_hsphy {
+ };
+ 
+ &usb_0_qmpphy {
+-	vdda-phy-supply = <&vreg_l4d>;
+-	vdda-pll-supply = <&vreg_l9d>;
++	vdda-phy-supply = <&vreg_l9d>;
++	vdda-pll-supply = <&vreg_l4d>;
+ 
+ 	orientation-switch;
+ 
+@@ -973,8 +973,8 @@ &usb_1_hsphy {
+ };
+ 
+ &usb_1_qmpphy {
+-	vdda-phy-supply = <&vreg_l3b>;
+-	vdda-pll-supply = <&vreg_l4b>;
++	vdda-phy-supply = <&vreg_l4b>;
++	vdda-pll-supply = <&vreg_l3b>;
+ 
+ 	orientation-switch;
+ 
+-- 
+2.43.0
+

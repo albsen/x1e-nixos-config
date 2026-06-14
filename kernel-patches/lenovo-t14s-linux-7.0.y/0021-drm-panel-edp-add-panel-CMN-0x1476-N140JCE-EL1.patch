@@ -1,0 +1,41 @@
+From b54035cd56ee943eb43e68e946072a63742628e0 Mon Sep 17 00:00:00 2001
+From: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+Date: Mon, 30 Mar 2026 18:04:27 +0200
+Subject: [PATCH] drm/panel-edp: add panel CMN 0x1476 N140JCE-EL1
+
+EDID:
+
+00 ff ff ff ff ff ff 00 0d ae 76 14 00 00 00 00
+1c 21 01 04 a5 1e 13 78 03 ee 95 a3 54 4c 99 26
+0f 50 54 00 00 00 01 01 01 01 01 01 01 01 01 01
+01 01 01 01 01 01 42 3c 80 a0 70 b0 24 40 30 20
+a6 00 2d bc 10 00 00 18 00 00 00 fd 00 28 3c 4a
+4a 10 01 0a 20 20 20 20 20 20 00 00 00 fe 00 43
+4d 4e 0a 20 20 20 20 20 20 20 20 20 00 00 00 fe
+00 4e 31 34 30 4a 43 45 2d 45 4c 31 0a 20 00 1b
+
+Detailed Timing Descriptors:
+DTD 1: 1920x1200 60.002801 Hz 8:5 74.163 kHz 154.260000 MHz (301 mm x 188 mm)
+Hfront 48 Hsync 32 Hback 80 Hpol N
+Vfront 10 Vsync 6 Vback 20 Vpol N
+
+Signed-off-by: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+---
+ drivers/gpu/drm/panel/panel-edp.c | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/drivers/gpu/drm/panel/panel-edp.c b/drivers/gpu/drm/panel/panel-edp.c
+index 937b7bc700d9..938d5373a06c 100644
+--- a/drivers/gpu/drm/panel/panel-edp.c
++++ b/drivers/gpu/drm/panel/panel-edp.c
+@@ -2023,6 +2023,7 @@ static const struct edp_panel_entry edp_panels[] = {
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x1441, &delay_200_500_e80_d50, "N140JCA-ELK"),
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x144f, &delay_200_500_e80_d50, "N140HGA-EA1"),
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x1468, &delay_200_500_e80, "N140HGA-EA1"),
++	EDP_PANEL_ENTRY('C', 'M', 'N', 0x1476, &delay_200_500_e80_d50, "N140JCE-EL1"),
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x148f, &delay_200_500_e80, "N140HCA-EAC"),
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x14a8, &delay_200_500_e80, "N140JCA-ELP"),
+ 	EDP_PANEL_ENTRY('C', 'M', 'N', 0x14d4, &delay_200_500_e80_d50, "N140HCA-EAC"),
+-- 
+2.43.0
+

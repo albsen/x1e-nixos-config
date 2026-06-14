@@ -1,0 +1,41 @@
+From e84c55ce831679dabbbad1ac25be0b7c578ad549 Mon Sep 17 00:00:00 2001
+From: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+Date: Thu, 23 Apr 2026 20:47:15 +0200
+Subject: [PATCH] arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: enable
+ gpi_dma controllers
+
+Enable the gpi_dma0..gpi_dma2 controllers
+
+currently no clients yet
+
+Signed-off-by: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+---
+ .../boot/dts/qcom/x1p42100-lenovo-thinkbook-16.dts   | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/qcom/x1p42100-lenovo-thinkbook-16.dts b/arch/arm64/boot/dts/qcom/x1p42100-lenovo-thinkbook-16.dts
+index 10676e8d332d..d89f52371e37 100644
+--- a/arch/arm64/boot/dts/qcom/x1p42100-lenovo-thinkbook-16.dts
++++ b/arch/arm64/boot/dts/qcom/x1p42100-lenovo-thinkbook-16.dts
+@@ -1296,6 +1296,18 @@ &qupv3_2 {
+ 	status = "okay";
+ };
+ 
++&gpi_dma0 {
++	status = "okay";
++};
++
++&gpi_dma1 {
++	status = "okay";
++};
++
++&gpi_dma2 {
++	status = "okay";
++};
++
+ &remoteproc_adsp {
+ 	firmware-name = "qcom/x1p42100/LENOVO/21NH/qcadsp8380.mbn",
+ 			"qcom/x1p42100/LENOVO/21NH/adsp_dtbs.elf";
+-- 
+2.43.0
+

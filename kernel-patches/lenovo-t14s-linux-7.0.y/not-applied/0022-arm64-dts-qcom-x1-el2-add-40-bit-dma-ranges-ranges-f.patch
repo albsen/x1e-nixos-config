@@ -1,0 +1,60 @@
+From 6068c5b2c3e6533ecba3d441dbe4aea2236c7cbc Mon Sep 17 00:00:00 2001
+From: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+Date: Sat, 28 Mar 2026 18:25:48 +0100
+Subject: [PATCH] arm64: dts: qcom: x1-el2: add 40-bit dma-ranges/ranges for
+ EL2
+
+When booting in EL2 Linux takes ownership of the SMMUv3 and needs a
+40-bit address space on /soc so that PCIe (and other masters) can
+actually reach RAM above 32 GB.
+
+Add the necessary #address-cells/#size-cells + dma-ranges/ranges
+inside the existing x1-el2.dtso.  Suppress the avoid_default_addr_size
+warning that this naturally triggers on an overlay that touches the
+SoC bus node.
+
+Link: https://lore.kernel.org/all/aSl48gV9laFb-MR1@linaro.org/
+Signed-off-by: Jens Glathe <jens.glathe@oldschoolsolutions.biz>
+---
+ arch/arm64/boot/dts/qcom/Makefile    | 4 ++++
+ arch/arm64/boot/dts/qcom/x1-el2.dtso | 9 +++++++++
+ 2 files changed, 13 insertions(+)
+
+diff --git a/arch/arm64/boot/dts/qcom/Makefile b/arch/arm64/boot/dts/qcom/Makefile
+index daf3c75ad79e..8d69eb2d684c 100644
+--- a/arch/arm64/boot/dts/qcom/Makefile
++++ b/arch/arm64/boot/dts/qcom/Makefile
+@@ -322,6 +322,10 @@ dtb-$(CONFIG_ARCH_QCOM)	+= sm8650-mtp.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= sm8650-qrd.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= sm8750-mtp.dtb
+ dtb-$(CONFIG_ARCH_QCOM)	+= sm8750-qrd.dtb
++
++dtb-$(CONFIG_ARCH_QCOM)	+= x1-el2.dtbo
++DTC_FLAGS_x1-el2 := -Wno-avoid_default_addr_size
++
+ x126100-lenovo-ideapad-slim3-el2-dtbs := x126100-lenovo-ideapad-slim3.dtb x1-el2.dtbo
+ dtb-$(CONFIG_ARCH_QCOM)	+= x126100-lenovo-ideapad-slim3.dtb x126100-lenovo-ideapad-slim3-el2.dtb
+ x1e001de-devkit-el2-dtbs	:= x1e001de-devkit.dtb x1-el2.dtbo
+diff --git a/arch/arm64/boot/dts/qcom/x1-el2.dtso b/arch/arm64/boot/dts/qcom/x1-el2.dtso
+index bc36b2e1bb7f..9592c769d4f8 100644
+--- a/arch/arm64/boot/dts/qcom/x1-el2.dtso
++++ b/arch/arm64/boot/dts/qcom/x1-el2.dtso
+@@ -8,6 +8,15 @@
+ /dts-v1/;
+ /plugin/;
+ 
++
++
++&soc {
++	#address-cells = <2>;
++	#size-cells = <2>;
++	dma-ranges = <0 0 0 0 0x100 0>;
++	ranges = <0 0 0 0 0x100 0>;
++};
++
+ &apss_watchdog {
+ 	status = "okay";
+ };
+-- 
+2.43.0
+
