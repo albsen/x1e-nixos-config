@@ -36,23 +36,25 @@ Graphical installer flow:
 2. Run the graphical installer as usual. Let it handle partitioning, users,
    locale, desktop selection, and the generated hardware config.
 3. After the installer completes, mount the installed system from a terminal
-   in the live environment and run the post-install script:
+   in the live environment and run the post-install script with `--rebuild-boot`:
 
 ```console
 sudo -i
 mount /dev/disk/by-label/<root-label> /mnt
 mkdir -p /mnt/boot
 mount /dev/disk/by-label/<efi-label> /mnt/boot
-/x1e-nixos-config/scripts/install-t14s-oled-el2-kernel.sh
+/x1e-nixos-config/scripts/install-t14s-oled-el2-kernel.sh --rebuild-boot
 ```
 
 The script copies this repo into `/mnt/etc/nixos/x1e-nixos-config`, adds an
 `x1e-t14s-oled-el2.nix` module to the generated installed-system config, enables
-the ThinkPad T14s OLED device support and EL2 boot support, then reruns
-`nixos-install` for `/mnt`.
+the ThinkPad T14s OLED device support and EL2 boot support, then runs
+`nixos-enter --root /mnt -- nixos-rebuild boot`.
 
-Use `--no-install` if you only want to update the generated config files without
-rerunning `nixos-install`.
+Without `--rebuild-boot`, the script only updates the generated config files and
+prints the `nixos-enter --root /mnt -- nixos-rebuild boot` command to run
+manually. Use `--install` only if you explicitly want to rerun `nixos-install`
+against the mounted target.
 
 ## Other projects with support for Snapdragon X Elite devices
 

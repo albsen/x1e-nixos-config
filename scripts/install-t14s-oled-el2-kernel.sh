@@ -3,11 +3,11 @@
 set -euo pipefail
 
 root=/mnt
-run_install=1
+mode=patch
 
 usage() {
     cat <<'EOF'
-Usage: install-t14s-oled-el2-kernel.sh [--root /mnt] [--no-install]
+Usage: install-t14s-oled-el2-kernel.sh [--root /mnt] [--rebuild-boot|--install]
 
 Patch an already generated NixOS target configuration so the installed system
 uses the X1E ThinkPad T14s OLED EL2 kernel, DTBs, firmware and boot files.
@@ -16,8 +16,10 @@ Run this from the live ISO after the graphical installer has completed, with
 the installed root mounted at /mnt and the installed ESP mounted at /mnt/boot.
 
 Options:
-  --root PATH    Mounted target root. Defaults to /mnt.
-  --no-install  Only update configuration files; do not rerun nixos-install.
+  --root PATH      Mounted target root. Defaults to /mnt.
+  --rebuild-boot  Update config and run nixos-enter --root PATH -- nixos-rebuild boot.
+  --install       Update config and rerun nixos-install against PATH.
+  --no-install    Deprecated alias for the default config-only mode.
 EOF
 }
 
@@ -32,7 +34,15 @@ while [ "$#" -gt 0 ]; do
             shift 2
             ;;
         --no-install)
-            run_install=0
+            mode=patch
+            shift
+            ;;
+        --rebuild-boot)
+            mode=rebuild-boot
+            shift
+            ;;
+        --install)
+            mode=install
             shift
             ;;
         -h|--help)
@@ -137,9 +147,21 @@ else
     printf '%s already imports ./x1e-t14s-oled-el2.nix\n' "$configuration"
 fi
 
-if [ "$run_install" -eq 1 ]; then
-    printf 'Running nixos-install for %s\n' "$root"
-    nixos-install --root "$root" --no-root-passwd --no-channel-copy
-else
-    printf 'Skipped nixos-install because --no-install was passed\n'
-fi
+case "$mode" in
+    patch)
+        printf 'Updated configuration files only. To install the boot generation, run:\n'
+        printf 'nixos-enter --root %s -- nixos-rebuild boot\n' "$root"
+        ;;
+    rebuild-boot)
+        printf 'Running nixos-rebuild boot inside %s\n' "$root"
+        nixos-enter --root "$root" -- nixos-rebuild boot
+        ;;
+    install)
+        printf 'Running nixos-install for %s\n' "$root"
+        nixos-install --root "$root" --no-root-passwd --no-channel-copy
+        ;;
+    *)
+        printf 'error: internal error: unknown mode %s\n' "$mode" >&2
+        exit 1
+        ;;
+esac
