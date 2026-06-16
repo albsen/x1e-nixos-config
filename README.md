@@ -42,6 +42,21 @@ ssh/authorized_keys
 At boot, the live system imports that file into `/root/.ssh/authorized_keys`.
 SSH password login is disabled; only keys from the USB file are accepted.
 
+Terminal-only boot:
+
+To boot a GRUB entry without the graphical environment, highlight the entry,
+press `e`, append this to the `linux` line, then boot with `Ctrl+x` or `F10`:
+
+```text
+systemd.unit=multi-user.target
+```
+
+If the display manager still starts, use this stronger one-time override:
+
+```text
+systemd.unit=multi-user.target systemd.mask=display-manager.service
+```
+
 Graphical installer flow:
 
 1. Boot the USB stick using the working OLED EL2 entry.
