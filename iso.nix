@@ -55,6 +55,8 @@ in
   systemd.tmpfiles.rules = [ "L /x1e-nixos-config - - - - ${./.}" ];
 
   environment.systemPackages = with pkgs; [
+    aider-chat
+    codex
     cryptsetup
     dosfstools
     efibootmgr
