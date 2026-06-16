@@ -1,0 +1,796 @@
+f7b790531cda	ASoC: qcom: q6apm: move component registration to unmanaged version
+da86e26b47c3	wip: arm64: dts: qcom: x1e80100-crd: Add WiFi/BT pwrseq
+84c6b96b1c09	wip: arm64: dts: qcom: x1e78100-t14s: enable bluetooth
+500f466acc8a	arm64: dts: qcom: x1e80100-dell-xps13-9345: add camera support
+5d6ae01acf7a	arm64: dts: qcom: x1e78100-t14s: Add audio playback over DisplayPort
+ddb628f135ab	arm64: qcom_laptops.config: Enable UHID
+7596e3a83d3b	UBUNTU: [debian] Initial debian and ubuntu directories
+bea39ae5cc14	UBUNTU: SAUCE: (no-up) Add support for ubuntu/ dir
+4c612c7e48fa	UBUNTU: SAUCE: import Huawei ES3000_V2 (2.1.0.23)
+ad108f7c235f	UBUNTU: Add ubuntu-host module
+a5efec9196e1	UBUNTU: Start new release
+74071bd8c1d3	UBUNTU: [packaging] move to v6.10 and rename to linux-unstable
+45b6b489abd4	UBUNTU: rebase on v6.10-rc1
+722a1b42ee0a	UBUNTU: [Config] updateconfigs following v6.10-rc1 rebase
+0203a515d06e	UBUNTU: debian.master/dkms-versions: temporarily remove all dkms
+34c9ccdd2f48	UBUNTU: link-to-tracker: update tracking bug
+56d2e211658c	UBUNTU: Ubuntu-unstable-6.10.0-1.1
+9c1bcadd42ea	UBUNTU: SAUCE: update hv_fcopy_daemon target to hv_fcopy_uio_daemon (following upstream rename)
+c9c9daf7bf95	Revert "UBUNTU: [Packaging] provide a wrapper module for python-perf"
+37534af6e591	Revert "UBUNTU: [Packaging] enable perf python module"
+e66dc252f0cb	UBUNTU: Start new release
+8f0e3eca6c4f	UBUNTU: link-to-tracker: update tracking bug
+03edc52cb849	UBUNTU: Ubuntu-unstable-6.10.0-2.2
+69d58d05e7d5	UBUNTU: SAUCE: [packaging] `make scripts_gdb` target is broken upstream, to avoid a FTBFS, do not try to install GDB_SCRIPTS
+36740296d908	UBUNTU: Start new release
+f7c1b678ee9c	UBUNTU: link-to-tracker: update tracking bug
+15991326619b	UBUNTU: Ubuntu-unstable-6.10.0-3.3
+a938af273fa0	UBUNTU: Start new release
+1f9a7cc15f83	UBUNTU: rebase on v6.10-rc2
+1fef435899c6	UBUNTU: link-to-tracker: update tracking bug
+5d69cc4d5ea8	UBUNTU: [Packaging] update variants
+c8e9a286db41	UBUNTU: Ubuntu-unstable-6.10.0-4.4
+208738c95284	UBUNTU: [packaging] remove the kernel configuration for perf
+2cc7a3b06df2	UBUNTU: [Packaging] dkms-build: Support DEB822 sources
+255d278a6d84	UBUNTU: Start new release
+741f4a81e44e	UBUNTU: link-to-tracker: update tracking bug
+2d31f68819d0	UBUNTU: rebase on v6.10-rc3
+28c8e6181f82	UBUNTU: Ubuntu-unstable-6.10.0-5.5
+9e40426f2fa6	UBUNTU: Start new release
+9bcc9b56a2ec	UBUNTU: rebase on v6.10-rc4
+4dea207869c0	UBUNTU: [Config] updateconfigs following v6.10-rc4 rebase
+d83173447275	UBUNTU: link-to-tracker: update tracking bug
+bdd974ed4de3	UBUNTU: Ubuntu-unstable-6.10.0-6.6
+d08290abd642	UBUNTU: Start new release
+f00cc789dbc1	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.06.11)
+b11e6b55e5b0	UBUNTU: [Packaging] debian.master/dkms-versions -- remove zfs-linux
+48535a9979a1	UBUNTU: link-to-tracker: update tracking bug
+dd6f40a06398	UBUNTU: Ubuntu-unstable-6.10.0-7.7
+aa5cf62f5218	UBUNTU: Start new release
+8e44341a6b29	UBUNTU: rebase on v6.10-rc5
+a7e23951804a	UBUNTU: [Config] arm64: disable RELR
+61445ff14851	UBUNTU: [Config] updateconfigs following v6.10-rc5 rebase
+5e9994558d05	UBUNTU: link-to-tracker: update tracking bug
+6c46228efce9	UBUNTU: Ubuntu-unstable-6.10.0-10.10
+15ce5cacf861	UBUNTU: [Config] toolchain version update
+896aafa762d8	UBUNTU: [Packaging] enable perf python module
+768060902e10	UBUNTU: [Packaging] provide a wrapper module for python-perf
+1304d90b4e6d	UBUNTU: [Packaging] Fix python3-setuptools build-dep for tools/perf
+54e94969f47c	UBUNTU: Start new release
+ccc957633613	UBUNTU: link-to-tracker: update tracking bug
+cb8896c5c912	UBUNTU: Ubuntu-unstable-6.10.0-11.11
+437972b3b927	UBUNTU: [Packaging] rtla: workaround the empty LD variable
+a55fe5499511	UBUNTU: [DEP-8] Add missing fakeroot dependency
+2dfd279892cf	UBUNTU: [Packaging] Check do_lib_rust before linking Rust lib files
+209053352b68	UBUNTU: [Config] toolchain version update
+2d22dc923316	UBUNTU: Start new release
+2b81b8411df9	UBUNTU: link-to-tracker: update tracking bug
+b0ae56840492	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.06.11)
+2b0cc027cfa3	UBUNTU: Ubuntu-unstable-6.10.0-12.12
+08f25d200394	UBUNTU: Start new release
+2806607cf623	UBUNTU: link-to-tracker: update tracking bug
+3dd4dd10c1ee	UBUNTU: rebase on v6.10-rc6
+ae659038532f	UBUNTU: zfs FTBFS on s390x - temporarily disable it
+f2a95b33fd2d	UBUNTU: Ubuntu-unstable-6.10.0-13.13
+ad90c875b1ff	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.06.11)
+d054f07abe20	UBUNTU: [Packaging] debian.master/dkms-versions -- disable zfs for s390x
+296e154cf615	UBUNTU: Start new release
+15732eaf587b	UBUNTU: link-to-tracker: update tracking bug
+6e635ba41dc6	UBUNTU: Ubuntu-unstable-6.10.0-14.14
+10f9ec17a576	UBUNTU: [Config] Set IOMMU_DEFAULT_DMA_STRICT=n and IOMMU_DEFAULT_DMA_LAZY=yes for s390x
+67fae6057826	UBUNTU: Start new release
+8534d587549a	UBUNTU: rename to linux
+da9e0b4fec81	UBUNTU: link-to-tracker: update tracking bug
+b24ec4518be4	UBUNTU: Ubuntu-6.10.0-15.15
+fd63476f499c	UBUNTU: Start new release
+9a048cf05df4	UBUNTU: rebase on v6.10-rc7
+65a39e62f29b	UBUNTU: link-to-tracker: update tracking bug
+b59a30377538	UBUNTU: Ubuntu-6.10.0-16.16
+8a282bd1f3e0	UBUNTU: Start new release
+f261953d570e	UBUNTU: rebase on v6.10
+b30340a6070f	UBUNTU: link-to-tracker: update tracking bug
+6cf42629efe7	UBUNTU: Ubuntu-6.10.0-17.17
+a12cf27d0370	UBUNTU: [Config]: Enable CONFIG_KEXEC_IMAGE_VERIFY_SIG on arm64
+2405c9e8c511	UBUNTU: [Config]: Configure TPM drivers as builtins for arm64 in annotations
+3843baf94212	Revert "UBUNTU: [Packaging] debian.master/dkms-versions -- disable zfs for s390x"
+9edfe3b462ab	UBUNTU: Start new release
+d1c1eadf99d4	UBUNTU: link-to-tracker: update tracking bug
+29e75ad7d329	UBUNTU: Ubuntu-6.10.0-18.18
+d57ed7f07e7c	UBUNTU: [packaging] move to v6.11 and rename to linux-unstable
+82dea3385df3	UBUNTU: Start new release
+dd2ffd676c73	UBUNTU: [Packaging] move to gcc-14 by default
+186ab2d1a9b5	UBUNTU: [Config] updateconfigs following v6.11-rc2 rebase
+2d76a09bdb33	UBUNTU: debian.master/dkms-versions: temporarily remove all dkms
+2e942ef32a8f	UBUNTU: link-to-tracker: update tracking bug
+f1997c7c235c	UBUNTU: Ubuntu-unstable-6.11.0-1.1
+4636df78946a	UBUNTU: [Packaging] Disable tools/perf on armhf (FTBFS)
+03e3a79c6067	UBUNTU: Start new release
+5776efdc7fa5	UBUNTU: Rebase on v6.11-rc3
+fc3c113fdb22	UBUNTU: [Config] toolchain version update
+58cc9dd94026	UBUNTU: [Config] Enable EXFAT_FS on s390x too
+4a905e3a4a29	UBUNTU: [Config] enable LZMA and ZSTD file compressions in EROFS
+b00a8a3e9cde	UBUNTU: link-to-tracker: update tracking bug
+c41645273123	UBUNTU: Ubuntu-unstable-6.11.0-2.2
+548e901df74d	UBUNTU: Start new release
+34e4e6b5c4e9	UBUNTU: [Config] updateconfigs following v6.11-rc3 rebase
+ca01129238c0	UBUNTU: link-to-tracker: update tracking bug
+c7751aef5016	UBUNTU: [Config] Disable PCI_DYNAMIC_OF_NODES
+b87805b13fa0	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.08.12)
+17bd2adc83a1	UBUNTU: Ubuntu-unstable-6.11.0-3.3
+d17a180fa898	UBUNTU: [Config] Disable CONFIG_DRM_I915_REPLAY_GPU_HANGS_API
+a0c1cd12c9f8	UBUNTU: [Packaging] carry ELF_PACKAGE_METADATA into relinking
+d53d9c87adda	UBUNTU: Start new release
+cb84655df607	UBUNTU: [Packaging] Rename to linux
+33635721589c	UBUNTU: link-to-tracker: update tracking bug
+683be99827ed	UBUNTU: [Packaging] update variants
+9d1f55d008e0	UBUNTU: Ubuntu-6.11.0-4.4
+98843239465d	UBUNTU: [Config] Force disable CONFIG_MITIGATION_GDS_FORCE again
+56573192386b	UBUNTU: [Config] updateconfigs following v6.11-rc5 rebase
+2a3903677b8c	UBUNTU: Start new release
+5a6480ed2b4f	UBUNTU: link-to-tracker: update tracking bug
+5c94db2b26ba	UBUNTU: Ubuntu-6.11.0-5.5
+a1f8dda61e34	UBUNTU: [Packaging] Add linux-cpupower to linux-tools-common Provides
+b73bf3f38cb8	UBUNTU: Start new release
+bd37736913db	UBUNTU: [Config] updateconfigs following v6.11-rc6 rebase
+d82a33814e44	UBUNTU: link-to-tracker: update tracking bug
+080f1e3566e0	UBUNTU: [Packaging] add linux-bpf-dev package
+20ead16eb53e	UBUNTU: [Packaging] do not attempt to generate BTF header on armhf
+20f78e65b91e	UBUNTU: [Packaging] perf: reenable libtraceevent
+b15c27f413aa	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.08.12)
+ded5c93f53e3	UBUNTU: SAUCE: arm64: dts: qcom: sc8280xp: Add Venus
+186b27f4646a	UBUNTU: SAUCE: phy: qcom-edp: drop regulator loads
+ec99b0740c6b	UBUNTU: Ubuntu-6.11.0-6.6
+47cda080aaf3	UBUNTU: [Packaging] Don't call dh_all on linux-bpf-dev unless on master kernel
+045b26ab4ad1	UBUNTU: [Packaging] Drop control.d/vars.generic-lpae
+ce973810f2c3	UBUNTU: [Config] Initial set of new options HIPERDISPATCH_ON and SCHED_TOPOLOGY_VERTICAL to yes for s390x
+fc63eab744cc	UBUNTU: Start new release
+d2f5df3dd8bc	UBUNTU: link-to-tracker: update tracking bug
+57f0dd65f989	UBUNTU: [Config] updateconfigs following v6.11-rc7 rebase
+9048b5cb32db	UBUNTU: Ubuntu-6.11.0-7.7
+647bcbb432bb	UBUNTU: [Packaging] Purge obsolete upstart files
+48155b4c90ed	UBUNTU: [Packaging] tools/hv: don't build/install hv_fcopy_uio_daemon on arm64
+e55437cbfabf	UBUNTU: [Config] disable CONFIG_TCG_TPM2_HMAC by default
+a5bb61feb7a5	UBUNTU: [Config] Update toolchain versions
+f9557489de75	UBUNTU: [Packaging] Don't force bindgen version
+e60753eec560	UBUNTU: [Config] Re-enable rust support for amd64
+ded3dfa8a1bc	UBUNTU: [Packaging] update variants
+b117829ba23e	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.08.12)
+1674f610dac9	UBUNTU: Start new release
+3bbd7487f92b	UBUNTU: link-to-tracker: update tracking bug
+f2188a11d29a	UBUNTU: Ubuntu-6.11.0-8.8
+5debee6c80f5	UBUNTU: [packaging] move to v6.12 and rename to linux-unstable
+66977e71a272	UBUNTU: Start new release
+4d6cfcbe5bce	UBUNTU: [Config] Update annotations after rebase to v6.12-rc4
+fec7b3a4148a	UBUNTU: [Packaging] Print do_tools_rtla
+73943e14a8f0	UBUNTU: [Config] move qcom clk and serial options as builtin
+5d188088368c	UBUNTU: [Packaging] use DEB_ prefix for some variables
+8fb28e561655	UBUNTU: debian.master/dkms-versions: temporarily remove most dkms packages
+f9e625cbfc81	UBUNTU: [Packaging] Allow rust overrides
+145d80a4509c	UBUNTU: [Packaging] Sort build dependencies alphabetically
+0bc101e73035	UBUNTU: [Packaging] Add list of used source files to buildinfo package
+ccdee4734e70	UBUNTU: [Packaging] replace $(DROOT) with debian
+4102e7ece6c2	UBUNTU: [Config] updateconfigs following v6.12-rc7 rebase
+207f1c65616a	UBUNTU: link-to-tracker: update tracking bug
+0c75c9dc6650	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.11.12)
+8754f18a224d	UBUNTU: [packaging] garbage collect some invalid/unnecessary flags
+398c91999b24	UBUNTU: Ubuntu-unstable-6.12.0-1.1
+d3382404748a	UBUNTU: Start new release
+7599dfcdf29b	UBUNTU: link-to-tracker: update tracking bug
+2dae6a6b742f	UBUNTU: debian.master/dkms-versions: temporarily remove dkmses
+7a5c1f6d1011	UBUNTU: Ubuntu-unstable-6.12.0-2.2
+fe526221d579	UBUNTU: Start new release
+2f3ad7b37eb3	UBUNTU: link-to-tracker: update tracking bug
+1db14efdbe93	UBUNTU: [Config] updateconfigs following v6.12 rebase
+0c869add623a	UBUNTU: Ubuntu-unstable-6.12.0-3.3
+ca4e003264f1	UBUNTU: [Packaging] avoid arch-specific certificate creation
+77781e57ce05	UBUNTU: Start new release
+485804e96d5c	UBUNTU: link-to-tracker: update tracking bug
+7717f780ce03	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2024.11.12)
+9970f09f4084	UBUNTU: Ubuntu-unstable-6.12.0-4.4
+7778cd761614	UBUNTU: [Packaging] Fix source file collection
+3f5c7d2fa49f	UBUNTU: [Packaging] linux-tools: Link directories rather than individual files
+18c5aff5b4c6	UBUNTU: [Packaging] linux-tools: Fix python perf library packaging
+7543b4eec28a	UBUNTU: [Packaging] linux-lib-rust: Fix incorrect package name
+56632cd7ebf7	UBUNTU: [Packaging] linux-tools: Put libperf-jvmti.so into lib/
+69a5d1dadec7	UBUNTU: Start new release
+cc06cd0badda	UBUNTU: link-to-tracker: update tracking bug
+fc359dbeb3cc	UBUNTU: [Config] updateconfigs following v6.12.2 stable import
+c467596bdcab	UBUNTU: Ubuntu-unstable-6.12.0-5.5
+c30b33384f60	UBUNTU: [packaging] rename to linux
+9f946037225c	UBUNTU: Start new release
+0366002bb08f	UBUNTU: link-to-tracker: update tracking bug
+439abcea4b76	UBUNTU: Ubuntu-6.12.0-6.6
+badbd8ca5ad7	UBUNTU: Start new release
+37e7b87a1117	UBUNTU: remove the AA stack
+d02ff83e0d94	UBUNTU: link-to-tracker: update tracking bug
+79caa7944694	UBUNTU: Ubuntu-6.12.0-7.7
+b19179770616	UBUNTU: [Packaging] disable hv-kvp-daemon if needed
+619156b7dd96	UBUNTU: [Packaging] linux-bpf-dev: Restructure packaging
+fbf20b2cee2a	UBUNTU: [Packaging] linux-bpf-dev: Skip packaging for additional kernel flavors
+4f36cb702719	UBUNTU: [Packaging] rules: Convert install-arch-headers to a stamped target
+e5528bbe2184	UBUNTU: [Packaging] rules: Fold config check into stamp-prepare-% target
+a3c8627fc557	UBUNTU: [Packaging] rules: Fold module signature check into stamp-install-% target
+f45a404b63a4	UBUNTU: [Packaging] rules: Remove inclusion of 4-checks.mk
+263235ba78ab	UBUNTU: [Packaging] rules: Remove build tests
+2f7f00ae22af	UBUNTU: [Packaging] rules: Clean up install-perarch target
+d9bee896f482	UBUNTU: [Packaging] rules: Move the ABI build directory to debian/build
+bec29ed8fd93	UBUNTU: [Packaging] rules: Introduce global abi_dir variable
+8c1f2ceec76e	UBUNTU: [Packaging] rules: Introduce global build_dir variable
+c33b88eeec83	UBUNTU: [Packaging] rules: Remove target_flavour variable
+1ee1eab7e4ca	UBUNTU: [Packaging] rules: Remove unused confdir variables
+111b552d4c4b	UBUNTU: [Packaging] rules: Remove undefined variables prev_{abinum, revisions}
+5849744d5dd9	UBUNTU: [Packaging] rules: Remove explicit kernel compression
+a113574a066c	UBUNTU: [Packaging] rules: Remove ship_extras_package feature
+3f64e05ea7cb	UBUNTU: [Packaging] rules: Remove stamps/stamp-prepare-indep target
+92ca113e3cb9	UBUNTU: [Packaging] rules: Explicitly set do_*tools* variables to false
+edfde12c4d5c	UBUNTU: [Packaging] rules: Wrap do_linux_tools around bpftool install/usage
+d031615a514d	UBUNTU: Start new release
+234d8f0260aa	UBUNTU: link-to-tracker: update tracking bug
+5adaf3c804e7	UBUNTU: Ubuntu-6.12.0-8.8
+6dc33ce751ee	UBUNTU: [Packaging] rules: Fix raw_kernelversion
+5aafd930141b	UBUNTU: Start new release
+f5619b08897b	UBUNTU: link-to-tracker: update tracking bug
+5233ac307824	UBUNTU: Ubuntu-6.12.0-9.9
+ee0386500e05	UBUNTU: [Config] toolchain version update
+42e2a9a2b4a7	UBUNTU: [Packaging] Update to clang-19 and newer rustc
+43f6cac03a9c	UBUNTU: [Config] Re-enable rust support
+4860d78132e2	UBUNTU: Start new release
+6a0be07d19bf	UBUNTU: link-to-tracker: update tracking bug
+0baaca9ab1dd	UBUNTU: Ubuntu-6.12.0-10.10
+7dbeee766d00	UBUNTU: Start new release
+802e61d5588f	UBUNTU: [Packaging] Rename to linux-unstable, bump version
+429043275c2c	UBUNTU: [Config] updateconfigs following v6.13 rebase
+f9402c043675	UBUNTU: [Config] toolchain version update
+e23a73c9bfa1	UBUNTU: link-to-tracker: update tracking bug
+08a5ba1a1ecb	UBUNTU: Ubuntu-unstable-6.13.0-1.1
+f9970930e6a0	UBUNTU: [Packaging]: Fix linux-bpf-dev build error for non-main kernels
+39f71a3bc254	UBUNTU: [Packaging] perf: enable debuginfod support
+118b99a1363c	UBUNTU: Start new release
+ee1bb6346322	UBUNTU: [Config] toolchain version update
+0459b736f5c0	UBUNTU: link-to-tracker: update tracking bug
+ba3f5c95b78b	UBUNTU: Ubuntu-unstable-6.13.0-2.2
+066acd271519	UBUNTU: [Config] updateconfigs following v6.14-rc1 rebase
+36ab80676a6b	UBUNTU: [Config] Change CONFIG_CRYPTO_HMAC_S390 to m for s390x
+f4502941e8e2	UBUNTU: [Config] temporarily disable DRM_HISI_HIBMC, FTBFS
+fb2888331eaa	UBUNTU: dkms: remove zfs, FTBFS
+3842ba795a0a	UBUNTU: [Config] armhf: disable TEGRA210_ADMA, FTBFS
+6974b3fbcb60	UBUNTU: Start new release
+0e9d7d865d5b	UBUNTU: Ubuntu-unstable-6.14.0-1.1
+7711b36bc65f	UBUNTU: [Config] updateconfigs following v6.14-rc2 rebase
+3944a95df2cc	UBUNTU: Start new release
+04ecbeb03123	UBUNTU: link-to-tracker: update tracking bug
+d835559df708	UBUNTU: Ubuntu-unstable-6.14.0-2.2
+857fc1f7c4ec	UBUNTU: Start new release
+bd10aece9274	UBUNTU: link-to-tracker: update tracking bug
+8e10d3461aab	UBUNTU: [Config] riscv64: Disable CONFIG_ARCH_RENESAS
+f20c99e2bd23	UBUNTU: [Config] riscv64: Disable Andes vendor extensions
+8d4835601f20	UBUNTU: [Config] riscv64: Set CONFIG_MMC_SPI=m like other architectures
+96bcefe8d735	UBUNTU: [Config] riscv64: Enable Svpbmt support
+2d09c788c416	UBUNTU: [Config] riscv64: Disable kernel compression
+cb4edbb3fb53	UBUNTU: [Config] riscv64: Sync config with other architectures
+1f617327982a	UBUNTU: [packaging] enable ppc64el signing
+01d7cbca2250	UBUNTU: [Config] updateconfigs
+414e138b71d1	UBUNTU: Ubuntu-unstable-6.14.0-3.3
+c7d079cbd01f	UBUNTU: [Packaging] disable signing for ppc64el
+0346bdfe013e	UBUNTU: [Packaging] disable signing for s390x
+2bc3c411c27b	UBUNTU: Start new release
+0ffbe4fc26dc	UBUNTU: [packaging] rename to linux
+5409e0950f0f	UBUNTU: [Config] update RUSTC version
+7ef1e044f427	UBUNTU: [packaging] remove $(wildcard $(DEBIAN)/control.d/*) dependency
+6e99be5f4d5a	UBUNTU: [packaging] avoid piping control-create for error detection
+c0ff45168e71	UBUNTU: [packaging] split flavour-control.stub
+95e2836aaba5	UBUNTU: [packaging] generate debian/control with correct signed/unsigned
+7a0688f0281a	UBUNTU: [packaging] remove DESC and =HUMAN= substitution
+7184c7ffebd5	UBUNTU: [Packaging] remove unnecessary dependency on control.stub
+acd43aaf9da1	UBUNTU: [Packaging] add .gitignore and clean more files
+7d0cbbb54642	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.02.11)
+3c086e782f0c	UBUNTU: [Packaging] debian.master/dkms-versions -- remove ipu6-drivers, ipu7-drivers, backport-iwlwifi-dkms and mofed-modules-24.10 FTBFS
+b8d544977e48	UBUNTU: link-to-tracker: update tracking bug
+69888d243b1b	UBUNTU: Ubuntu-6.14.0-4.4
+158e2ab7939c	UBUNTU: [Packaging] clean up the distclean rule
+25bee3e68c00	UBUNTU: Start new release
+3dc63548c1cc	UBUNTU: link-to-tracker: update tracking bug
+71d65446da0e	UBUNTU: [Config] updateconfigs following v6.14-rc4 rebase
+e0451d792bbf	UBUNTU: Ubuntu-6.14.0-5.5
+d8add826bdbf	UBUNTU: [Packaging] enable signing for s390x
+4862b1d36438	UBUNTU: Start new release
+f54bafab146c	UBUNTU: link-to-tracker: update tracking bug
+0abf9ae22e23	UBUNTU: Ubuntu-6.14.0-6.6
+2576f28d21be	UBUNTU: Start new release
+27092a23a6fa	UBUNTU: link-to-tracker: update tracking bug
+72e8c1f1b437	UBUNTU: Ubuntu-6.14.0-7.7
+692d13491bfd	UBUNTU: [Packaging] templates/image.postrm.in: Add modules.weakdep to the remove-list
+c58e4e24b25b	UBUNTU: [Packaging] bpftool: move to separate unversioned and unflavored binary package
+1b582dd72d05	UBUNTU: [Packaging] Split linux-perf from linux-tools-common
+61378bcb0a34	UBUNTU: [Config] Re-enable rust support, switch from genksyms to gendwarfksyms
+205e3b3b17be	UBUNTU: Start new release
+6bfb9d2451cf	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.02.26)
+7dcb986cd69a	UBUNTU: link-to-tracker: update tracking bug
+d3a2d48a5e37	UBUNTU: [packaging] check-in copyright directly in debian/
+0fcfc7a82e16	UBUNTU: [Packaging] remove intermediate $(DEBIAN)/control.stub
+c2ea721a28da	UBUNTU: [Packaging]: wdat_wdt.ko is moved from "linux-modules-extra-*-generic" to "linux-modules-*-generic"
+c2ab2502d31f	UBUNTU: [Config] updateconfigs following v6.14-rc6 rebase
+c787e3ee6a99	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.03.10)
+c78c5a6e719c	UBUNTU: Ubuntu-6.14.0-8.8
+8ea07cdb0195	UBUNTU: [Config] Revert back to GENKSYMS on non-rust-enabled archs
+37cad85b1a8d	UBUNTU: Start new release
+149edc4e2cf2	UBUNTU: link-to-tracker: update tracking bug
+b442c646348d	UBUNTU: Ubuntu-6.14.0-9.9
+12ca97748b70	UBUNTU: Start new release
+b4a7b564dbcf	UBUNTU: link-to-tracker: update tracking bug
+4f97b02b2c63	UBUNTU: Ubuntu-6.14.0-10.10
+77c7cc8ee6d2	UBUNTU: SAUCE: dt-bindings: platform: Add bindings for Lenovo Yoga Slim 7x EC
+4b680435bdd0	UBUNTU: SAUCE: platform: arm64: Add driver for Lenovo Yoga Slim 7x's EC
+255a2d7a5446	UBUNTU: SAUCE: Change: cracking sound fix
+b403b29a6528	UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-asus-vivobook: Introduce retimers, external DP
+35e90ca65b0d	UBUNTU: [Config] Enable X Elite modules on arm64
+91ecde08989a	UBUNTU: Start new release
+a367a699c57c	UBUNTU: [Config] updateconfigs following v6.14-rc7 rebase
+e88856eab5e4	UBUNTU: link-to-tracker: update tracking bug
+dcaaa9c8aa8b	UBUNTU: Ubuntu-6.14.0-11.11
+d7623481aeae	UBUNTU: [Packaging] linux-perf: Fix python perf library location
+b4706700c27f	UBUNTU: [packaging] mv debian.master/copyright debian
+a5145758b238	UBUNTU: [Config] updateconfigs for DEV_SYNC_PROBE
+fe829d8325e0	UBUNTU: [Config] Disable CONFIG_MODULE_COMPRESS_ALL
+8fa566c16136	UBUNTU: SAUCE: Revert "usb: typec: ps883x: fix missing accessibility check"
+b554e8509599	UBUNTU: Start new release
+8d2cbf3765f6	UBUNTU: link-to-tracker: update tracking bug
+3c67bb4b1192	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.03.24)
+71b7c23c0451	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.03.24)
+db163ed2175d	UBUNTU: Ubuntu-6.14.0-12.12
+6d7cdd6dd9ac	UBUNTU: [Packaging] Fix invoking of control-create
+fa8ca3cc8984	UBUNTU: Start new release
+d553a3704b70	UBUNTU: link-to-tracker: update tracking bug
+286a9499c46c	UBUNTU: Ubuntu-6.14.0-13.13
+81b795e9a4d3	UBUNTU: [Packaging] Drop fdutils from linux-image Suggests
+703ebf43a678	UBUNTU: [Packaging] Add bpftool, linux-perf to linux-image Suggests
+2aa349198bc8	UBUNTU: Start new release
+a13c9efcbaf1	UBUNTU: link-to-tracker: update tracking bug
+30f3789bbd60	UBUNTU: Ubuntu-6.14.0-14.14
+8c0495c172cd	UBUNTU: [Packaging] Build bpftool and linux-perf on riscv64
+718eec4701a9	UBUNTU: [Packaging] Allow binary-debs target without enabling do_flavour_image_package
+c9b0995f06ee	UBUNTU: [Packaging] Fix bpftool, linux-perf packaging in binary-perarch
+50f8c5c712a1	UBUNTU: [Packaging] Bump pahole build-dep
+942936774ce0	UBUNTU: Start new release
+554e2c477f8f	UBUNTU: link-to-tracker: update tracking bug
+d647d8cb36a0	UBUNTU: Ubuntu-6.14.0-15.15
+81d1ed49c1a4	UBUNTU: Start new release
+3864dd39a22a	UBUNTU: [Config] Enable Lenovo wmi hotkey driver
+fbd96d773a4c	UBUNTU: link-to-tracker: update tracking bug
+f7c9b20b4ad0	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/2025.04.14)
+ee181f8555a6	UBUNTU: Ubuntu-6.14.0-17.17
+6daad4aaf190	UBUNTU: Start new release
+fbaf478c8115	UBUNTU: [Packaging] Rename to linux-unstable, bump version
+c7fc53962a68	UBUNTU: [Packaging] Re-enable tools build on cross-builds
+9aba8b82201b	UBUNTU: [Packaging] debian.master/dkms-versions -- temporarily remove all dkms
+a0683a1e08be	UBUNTU: [Packaging] Introduce do_sources_list build flag
+9ddec6203bb4	UBUNTU: link-to-tracker: update tracking bug
+a966e5aa7694	UBUNTU: [Packaging] Drop support for modules-extra
+a3d2ea84c1fe	UBUNTU: [Config] Updateconfigs for v6.15-rc5 rebase
+739a39ecd43b	UBUNTU: Ubuntu-unstable-6.15.0-1.1
+61bb0389e37a	UBUNTU: Start new release
+46d1a726347b	UBUNTU: [Config] Updateconfigs for v6.15-rc7 rebase
+c2a4c1f66b85	UBUNTU: link-to-tracker: update tracking bug
+ea4d07395690	UBUNTU: Ubuntu-unstable-6.15.0-2.2
+1caf675496ff	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.05.26)
+87b516271e8d	UBUNTU: [config] prepare for Canonical Livepatch key rotation
+21605812c78c	UBUNTU: [Config] updateconfigs following v6.16-rc1
+7d8fbf763782	UBUNTU: [Config] FTBFS: disable INTEL_SKL_INT3472
+fca30b37cea0	UBUNTU: [Packaging] debian.master/dkms-versions -- temporarily remove zfs FTBFS
+a47ec0d758d7	UBUNTU: [Packaging] debian.master/dkms-versions -- temporarily remove v4l2loopback FTBFS
+9d87d6b3f290	UBUNTU: Start new release
+c8ae24001bb2	UBUNTU: link-to-tracker: update tracking bug
+7ebfb0f3c49a	UBUNTU: Ubuntu-unstable-6.16.0-1.1
+6694d649603f	UBUNTU: [Config] updateconfigs following v6.16-rc2
+174ab6bef5d6	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.06.03)
+9336da595a0c	UBUNTU: Start new release
+54049ab8eb10	UBUNTU: link-to-tracker: update tracking bug
+28fb240fbe70	UBUNTU: Ubuntu-unstable-6.16.0-2.2
+87e9809eb58f	UBUNTU: [Config] enable CONFIG_DELL_UART_BACKLIGHT
+ee1ad5d1b4aa	UBUNTU: [Packaging] Update debian/signature-inclusion
+102a27fd09d1	UBUNTU: [Packaging] Install compressed vmlinuz.efi on arm64
+09a83ff47756	UBUNTU: Start new release
+a8fcf2be58d7	UBUNTU: link-to-tracker: update tracking bug
+df5ee128bd61	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.06.03)
+e2139cd5dcf3	UBUNTU: Ubuntu-unstable-6.16.0-3.3
+fa8d73916b93	UBUNTU: Start new release
+041671b38c5f	UBUNTU: link-to-tracker: update tracking bug
+3fc4e5ef5e81	UBUNTU: Ubuntu-unstable-6.16.0-4.4
+a88d3a27fb99	UBUNTU: Start new release
+51f9d357f0b8	UBUNTU: link-to-tracker: update tracking bug
+ca9f8b8fc852	UBUNTU: [Packaging] debian.master/control.stub.in: prepare for cross-compiling
+669a21709aaa	UBUNTU: [Packaging] debian/rules.d/0-common-vars.mk: avoid infinite loop
+baf6a8d6aba5	UBUNTU: [Packaging] debian/rules.d/0-common-vars.mk: use native GCC
+79ffbf82d6ed	UBUNTU: [Packaging] debian/rules.d/0-common-vars.mk: enable linux-tools cross-compilation
+539482b6370a	UBUNTU: [Packaging] debian/rules.d/0-common-vars.mk: fix linux-tools cross-build
+4f1b1bbcf556	UBUNTU: [Config] updateconfigs following v6.16-rc5 rebase
+10304eca8fdc	UBUNTU: Ubuntu-unstable-6.16.0-5.5
+96d135cdf111	UBUNTU: [Packaging] debian.master/control.stub.in: fix dpkg-checkbuilddeps
+b105d813fa87	UBUNTU: Start new release
+ad03e187ba91	UBUNTU: [Config] RUSTC_VERSION = 108501
+5785b43cdc9b	UBUNTU: [Config] s390: Build ap driver into the kernel
+9e046fa6c31f	UBUNTU: link-to-tracker: update tracking bug
+efa164765eaa	UBUNTU: Ubuntu-unstable-6.16.0-6.6
+389a60bc698e	UBUNTU: Start new release
+5a40ae139651	UBUNTU: [Config] updateconfigs following v6.16-rc6 rebase
+67676c869afa	UBUNTU: link-to-tracker: update tracking bug
+9c22c7379f79	UBUNTU: Ubuntu-unstable-6.16.0-7.7
+c894744c4b02	UBUNTU: Start new release
+108752280051	UBUNTU: [Packaging] rename to linux
+9cf0bf97650a	UBUNTU: link-to-tracker: update tracking bug
+6e623b2c92f2	UBUNTU: Ubuntu-6.16.0-8.8
+cb48d693b516	UBUNTU: Start new release
+5034aa28d37e	UBUNTU: link-to-tracker: update tracking bug
+f98444003944	UBUNTU: Ubuntu-6.16.0-9.9
+9f9326de5b55	UBUNTU: Start new release
+55b017f488f0	UBUNTU: link-to-tracker: update tracking bug
+f4adc553b523	UBUNTU: Ubuntu-6.16.0-10.10
+60c1ba29f1c6	UBUNTU: Start new release
+983c0496df64	UBUNTU: link-to-tracker: update tracking bug
+c9d385158335	UBUNTU: Ubuntu-6.16.0-11.11
+c45991190247	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.07.28)
+982bc1cbc130	UBUNTU: Start new release
+1c61aec24f26	UBUNTU: link-to-tracker: update tracking bug
+e3d37db22095	UBUNTU: [Packaging] resync git-ubuntu-log
+638fce710808	UBUNTU: [Packaging] update variants
+7c669bc09fc1	UBUNTU: [Packaging] update annotations scripts
+1b69775fb1e5	UBUNTU: Ubuntu-6.16.0-12.12
+8d15ae4d7f99	UBUNTU: [Packaging] debian.master/dkms-versions -- remove ipu6 since it's upstream
+406338545370	UBUNTU: Start new release
+740043a7cb98	UBUNTU: link-to-tracker: update tracking bug
+b09fbe1bae30	UBUNTU: Ubuntu-6.16.0-13.13
+6ab1f25ea387	UBUNTU: [Config] Replace FB_HYPERV with DRM_HYPERV
+f10b11158da9	UBUNTU: [Config] enlarge CONFIG_SERIAL_SH_SCI_NR_UARTS
+0dca07eab1f7	UBUNTU: [Packaging] Install bpf header to correct location
+1e1e51743912	UBUNTU: [Packaging] move to unversioned gcc by default
+911349632228	UBUNTU: [Config] bump toolchain version to gcc-15
+715364e7275f	UBUNTU: Start new release
+2593fd7eebc1	UBUNTU: link-to-tracker: update tracking bug
+b5872e4a3327	UBUNTU: Ubuntu-6.16.0-14.14
+74feb56cf50b	UBUNTU: Start new release
+63b7f2ba6d2a	UBUNTU: link-to-tracker: update tracking bug
+35a8676415f0	UBUNTU: Ubuntu-6.16.0-16.16
+945392a797fb	UBUNTU: Start new release
+f7f41b1650a6	UBUNTU: [Config] updateconfig following rebase to v6.17-rc2
+575f5864b5bb	UBUNTU: [Packaging] Renane to linux-unstable
+2d08b1c0ba70	UBUNTU: [Packaging] debian.master/dkms-versions: Drop failing dkms packages
+d5db70401bc3	UBUNTU: link-to-tracker: update tracking bug
+1c73a9c37e8e	UBUNTU: [Packaging] Don't generate list of source files
+d6af434a22fe	UBUNTU: [Config] Enable CONFIG_IPV6_OPTIMISTIC_DAD
+22d5b432e1ec	UBUNTU: [Packaging] Don't suggest linux-modules-extra
+2418ebbffbf0	UBUNTU: Ubuntu-unstable-6.17.0-1.1
+47a759ded9bf	UBUNTU: [Packaging] Use host bpftool if doing cross-compiling
+c10208dbbf39	UBUNTU: Start new release
+14ce8bd52028	UBUNTU: [Packaging] Rename to linux
+efd0cadfde19	UBUNTU: [Config] disable CONFIG_SECURITY_APPARMOR_RESTRICT_USERNS
+a2a01704d31e	UBUNTU: [Packaging] d/t/ubuntu-regression-suite: use https to clone
+bfd5c07be342	UBUNTU: [Packaging] d/t/control: add snapd and fuse-overlayfs dependencies
+e5f89991635f	UBUNTU: [Config] enable mediatek media platform drivers
+fbed2c47629d	UBUNTU: link-to-tracker: update tracking bug
+55b3cf4b5155	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.08.25)
+7251e7261ed6	UBUNTU: [Packaging] Drop/update some dkms packages.
+6f1af7abd497	UBUNTU: Ubuntu-6.17.0-2.2
+842e22fe15a2	UBUNTU: [Packaging] update variants
+cf4448f403cc	UBUNTU: [Packaging] Fix linux-modules Description, add dependency on wireless-regdb from old -extra
+7c1cdf8522e6	UBUNTU: [Packaging] Fix arch list for bpftool build-dep
+3989a6da8dc8	UBUNTU: Start new release
+5fc0b07dd5a6	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.08.25)
+2134c7e2428f	UBUNTU: [Config] Enable Xilinx PS UART configs
+0ae8a8f62ae7	UBUNTU: link-to-tracker: update tracking bug
+03ea07d17821	UBUNTU: Ubuntu-6.17.0-3.3
+7279217afdab	UBUNTU: [Config] Re-enable Rust support, and make sure it doesn't get disabled by accident
+3a17115c2e69	UBUNTU: Start new release
+63492f2b5865	UBUNTU: [Config] Enable SYM53C8XX_2 on arm64
+ef2ae2423398	UBUNTU: [Config] Add a note about SCSI_SYM53C8XX_2
+3009d76b0a07	UBUNTU: [Config] enable TDX host support
+51ae31cfd192	UBUNTU: [Config] Set TOUCHSCREEN_APPLE_Z2=m (arm64)
+2b3873aa1505	UBUNTU: [Config] updateconfigs for v6.17-rc5 rebase
+9b5ec4d4ee17	UBUNTU: link-to-tracker: update tracking bug
+d27c661ae9b9	UBUNTU: Ubuntu-6.17.0-4.4
+4a2da7ac65b4	UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-dell-xps13-9345: Mark audio channels as left-right swapped
+27e55c137862	UBUNTU: SAUCE: dt-bindings: phy: qcom,sc8280xp-qmp-usb43dp-phy: Document default phy mode
+2d57f48f9acf	UBUNTU: SAUCE: arm64: dts: qcom: x1e78100-lenovo-thinkpad-t14s: add HDMI nodes
+a3da4252b45a	UBUNTU: SAUCE: dt-bindings: arm: qcom: Add Acer Swift 14 AI
+2ee1928d93f0	UBUNTU: SAUCE: arm64: dts: qcom: x1-acer-swift-14: Add support for Acer Swift 14
+dd522fb171ff	UBUNTU: SAUCE: arm64: dts: qcom: x1e80100: move remaining dp0/1/2 data-lanes to SoC dtsi
+ff760639a383	Revert "UBUNTU: SAUCE: Change: cracking sound fix"
+99de6b3ac505	UBUNTU: [Config] Enable AMD_ISP4
+b58ccce2d0cd	UBUNTU: [Config] updateconfigs for v6.17-rc6 rebase
+dd9de18f2f58	UBUNTU: [Packaging] fix build profile spec for bpftool
+c3100afe15a2	UBUNTU: Start new release
+496aa6e216a1	UBUNTU: link-to-tracker: update tracking bug
+d877d11b20fe	UBUNTU: [Packaging] resync git-ubuntu-log
+1bfff97632ae	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.09.22)
+0eb9c8224a10	UBUNTU: Ubuntu-6.17.0-5.5
+3db58c7e93b7	UBUNTU: [Config] riscv64: Update EFI_SBAT_FILE
+468a8f57e750	UBUNTU: [Config] riscv64: Enable EFI_ZBOOT
+4aa7a28829d8	UBUNTU: [Config] riscv64: Disable support for non-RVA23 SoCs
+254a72702c3b	UBUNTU: [Config] riscv64: Disable RISCV_ISA_FALLBACK
+cd2b08a0f797	UBUNTU: [Config] riscv64: Sync config with other architectures
+59fed20fe292	UBUNTU: [Config] updateconfigs after rebase to 6.17
+d9209312db6e	UBUNTU: Start new release
+3205e07d83cb	UBUNTU: Upstream stable to v6.17.1
+9e8e201bc375	UBUNTU: link-to-tracker: update tracking bug
+c471e3a69ef2	UBUNTU: Ubuntu-6.17.0-6.6
+ec1d558ce633	UBUNTU: [Packaging] Rename to linux-unstable and move to 6.18
+6db65fcf53fb	UBUNTU: Start new release
+747b2e73ea27	UBUNTU: [Config] updateconfigs following v6.18-rc1 rebase
+1595d9eeef5e	UBUNTU: [Config] apparmor: remove SECURITY_APPARMOR_RESTRICT_USERNS
+ed452975509f	UBUNTU: [Packaging] debian.master/dkms-versions: Drop failing dkms packages
+6889f9083772	UBUNTU: [Config] updateconfigs following v6.18-rc2 rebase
+88d6aaf997fe	UBUNTU: move to resolute
+65bdf13f7f17	UBUNTU: link-to-tracker: update tracking bug
+39f32a912e0b	UBUNTU: Ubuntu-unstable-6.18.0-1.1
+44d8204650f9	UBUNTU: [Config] update rustc version
+2b3c3b0b99cc	UBUNTU: Start new release
+69c781897464	UBUNTU: link-to-tracker: update tracking bug
+cfd254ddf205	UBUNTU: Ubuntu-unstable-6.18.0-2.2
+271f9b77d28b	UBUNTU: [Config] Raise the architectural level set for s390x to z15
+943241c796c2	UBUNTU: [Config]: Enable CONFIG_CRYPTO_BENCHMARK
+0925aa63f679	UBUNTU: Start new release
+c09725c40737	UBUNTU: link-to-tracker: update tracking bug
+c50f2f96f7ad	UBUNTU: [Config] updateconfigs after v6.18-rc3 rebase
+a8b11f9e1569	UBUNTU: Ubuntu-unstable-6.18.0-3.3
+4cf77847de53	UBUNTU: Start new release
+b74e289f1b63	UBUNTU: link-to-tracker: update tracking bug
+9c1ea5bf8c76	UBUNTU: [Config] updateconfigs following v6.18-rc5 rebase
+20ae71b84010	UBUNTU: Ubuntu-unstable-6.18.0-4.4
+9210696f799e	Revert "UBUNTU: [Config] FTBFS: disable INTEL_SKL_INT3472"
+03aab4f2f119	UBUNTU: Start new release
+2b4ca1bfd78f	UBUNTU: link-to-tracker: update tracking bug
+976deae1666c	UBUNTU: [Config] updateconfigs following v6.18-rc6 rebase
+625dec704f1f	UBUNTU: Ubuntu-unstable-6.18.0-5.5
+16ebb83a513f	UBUNTU: Start new release
+a58d2711474e	UBUNTU: link-to-tracker: update tracking bug
+f3ba7365393f	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.10.20)
+b95a844338a1	UBUNTU: [Packaging] debian.master/dkms-versions: Drop failing dkms packages
+7e916d022f88	UBUNTU: Ubuntu-unstable-6.18.0-6.6
+cc3a3589e755	UBUNTU: Start new release
+8501c7aaa99b	UBUNTU: [Config] updateconfigs following v6.19-rc4 rebase
+7056fde2aa56	UBUNTU: [Packaging] debian.master/dkms-versions -- update from kernel-versions (main/d2025.10.20)
+7024f4669307	UBUNTU: SAUCE: arm64: dts: qcom: x1-acer-swift-14: Fix includes
+0c1975f765f0	UBUNTU: [Packaging] Drop failing dkms packages
+6046ce6ca4a3	UBUNTU: link-to-tracker: update tracking bug
+3285c29b0937	UBUNTU: [Packaging] update variants
+aefc1e9a6869	UBUNTU: Ubuntu-unstable-6.19.0-1.1
+565c6a7c4f09	Revert "UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-asus-zenbook-a14: Enable WiFi, Bluetooth"
+0bb10452ef3e	Revert "UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-dell-xps13-9345: Mark audio channels as left-right swapped"
+ce093969a4a7	arm64: dts: qcom: x1e80100-dell-xps13-9345: add debug uart
+e6c3b3e81b0d	arm64: dts: qcom: x1e78100-lenovo-thinkpad-t14s: add HDMI nodes
+fcdad9208f0f	fixup!: arm64: dts: qcom: sc8280xp: Add Venus
+135fc7e3d096	arm64: dts: qcom: x1e80100-asus-zenbook-a14: Enable WiFi, Bluetooth
+293046aa40bc	UBUNTU: Sync packaging from qcom-x1e-6.18
+881c2f1e95b0	arm64: dts: qcom: Add support for X1-based Surface Pro 11
+290c053c9b29	6.19.0-2.2
+8c2241c655d2	dt-bindings: arm: qcom: Document Microsoft Surface Pro 11
+b4b8324dc0cd	arm64: dts: qcom: Add support for X1-based Surface Pro 11
+7497402d2fdf	Changelog for 6.19.0-3.3
+48214b6f309f	Changelog for 6.19.0-3.4
+f5e1c8932731	drm/msm/dp: add debug code in dp_ctrl_on_stream
+7207e66a8bea	dt: el2: pcie-smmu: amend msi-parent definition to 0x40000
+2da1759c7135	arm64: dts: qcom: sc8280xp-x13s: set the bluetooth address with the local-bd-address property
+40efc317035a	arm64: dts: qcom: sc8280xp-blackrock: set local bd-address, add venus codec
+8f61df2280cb	arm64: dts: qcom: sc8280xp-x13s: correct cooling map identifiers
+d4d0d3fb9561	arm64: dts: qcom: x1e001de-devkit: device tree for SnapDragon Dev Kit
+5eff7929d777	arm64: dts: qcom: sc8280xp-blackrock: switch to uefi rtc offset
+f47c10b6e5e3	arm64: dts: qcom: x1e80100: "I beg to differ" changes contrary to jhovold/wip
+d0faf9b7d78e	arm64: dts: qcom: x1e80100-vivobook-s15: add dp altmode support, sound
+dab240da8e64	arm64: dts: qcom: x1e80100-vivobook-s15: make sound distinct
+0fcf087cfc96	arm64: dts: qcom: add link frequncies for dp altmode links
+c1d1404090e8	arm64: dts: qcom: x1e001de-devkit: enable pcie3 and mdss_dp3
+0dfdf3651c4e	arm64: dts: qcom: x1e001de-devkit: add pcie3 pinctrl
+89b95d7229e0	arm64: dts: qcom: x1e001de-devkit: amend pcie3 pinctrl, complete dp connector
+3cf61a876bfa	arm64: dts: qcom: x1e001de-devkit: split into 2 versions
+3a9174e4f06c	arm64: dts: qcom: x1-vivobook-s15: create separate variants for x1e*/x1p6* and x1p4*
+5523384426b1	arm64: dts: qcom: x1e001de-devkit: compare/amend vs CRD
+fcfdd9f126b5	arm64: dts: qcom: x1e80100-vivobook-s15: mark l12b and l15b always-on
+c8e14e0a2423	arm64: dts: qcom: x1e80100-dell-xps13-9345: delete pm8010@c node
+02b60e1557e3	arm64: dts: qcom: x1e001de-devkit: set all USB controllers to host mode
+1b32a64093ba	Build: add rebuild.sh
+e1abeb78b7ba	arm64: dts: qcom: Add support for X1-based Asus Zenbook A14
+dd36c7ffe6ec	arm64: dts: qcom: support sound on Asus Zenbook A14
+046cae6c1650	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: remove codec, add EC node
+8b6913e61494	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: add EC pinctrl
+d0d809c567ad	arm64: dts: qcom: x1p64100-acer-sf14: commonalize Acer Swift AI dt
+4a4146546eab	arm64: dts: qcom: x1-acer-swift-14: add support for Swift Go 14 AI
+872e3840310c	arm64: dts: qcom: x1-asus-vivobook-s15: Fix vreg_l2j_1p2 voltage
+6825fa2818c0	dt-bindings: platform: Add bindings for Qcom's EC on IT8987
+2ff507cc9c0e	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: Add the EC
+130913cb0fd2	arm64: dts: qcom: x1e001de-devkit: add (rudimentary) DMICs, spawn -jg variant
+9f96d1734e93	arm64: dts: qcom: x1e80100: add epd hpd pinctrl
+bc8935547e12	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hpd gpio to dp controller, fix backlight
+a8f9c244d151	arm64: dts: qcom: x1e80100-dell-xps13-9345: Enable fingerprint sensor
+e2dce5b3dbaa	arm64: dts: qcom: x1e001de-devkit-jg: add port definition for I226V
+9b39ad36bc55	arm64: dts: qcom: x1e001de-devkit-jg: set the i226V config to a working configuration
+e8481f08f3f9	arm64: dts: qcom: x1e001de-devkit-jg: Enable 4 lane DP mode
+be1cc2b9416d	arm64: dts: qcom: sc8280xp: Add mode-switch to all USB+DP QMP PHYs
+2f606f344bd9	arm64: dts: qcom: sc8280xp-blackrock: enable 4 lanes DP mode
+3131f4aff1f7	arm64: dts: qcom: sc8280xp-x13s: remove slpi firmware
+65d5e101d795	usb: typec: mux: add debug code
+4bbd11742333	dt-bindings: arm: qcom: Clean-up of ambiguous compatibility strings
+1f9466f1395d	arm64: dts: qcom: x1*: Remove qcom,sm8550-pmic-glink fallback
+e9a5074cfe0d	arm64: dts: qcom: x1*: Remove qcom,sm8550-pmic-glink fallback
+a2bb00132009	arm64: dts: qcom: x1p42100: Add support for Lenovo Ideapad 5 14Q8X9
+04f793f4c8ae	dt: arm64: qcom: sc8280xp-blackrock: amend usb0-sbu-mux enable gpio
+d0001e83cea0	arm64: dts: qcom: x1e001de-devkit-jg: adjust to original
+3408a4b04d49	dt-bindings: display: panel: samsung,atna40ct01: document ATNA40CT01
+c8da9aa19d04	arm64: dts: qcom: x1p42100: Split dt for Ideapad 5 variants
+7a3411858ae8	arm64: dts: qcom: x1-asus-vivobook-s15: Enable 4 lane DP mode
+d1b9794081ec	arm64: dts: qcom: x1p42100: remove backlight pwm for Ideapad 5 variants
+5993ab5239fc	arm64: dts: qcom: x1p42100-ideapad-slim5x: Limit link speed on pcie3 to 1
+d43359c4ebd1	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: add Bluetooth support
+9514c4a5c548	config: add CONFIG_EFI_ARMSTUB_DTB_LOADER=y
+f97c8dbca6de	config: add CONFIG_REGULATOR_DUMMY_CONSUMER=m
+0c8c7a00354e	arm64: dts: qcom: x1e001de-devkit-jg: remove pmu-wcn7850 regulators
+3294909c881c	arm64: dts: qcom: x1p42100-ideapad-slim5x: amend against tb16, remove cam supply
+496fbbdb20c3	arm64: dts: qcom: x1p42100-ideapad-slim5x: use edp panel, t14s-style pwm backlight
+19a44b8ce73d	arm64: dts: qcom: x1p42100-ideapad-slim5x: adjust regulators layout according to error msgs
+2ba206ae1c34	arm64: dts: qcom: x1p42100-ideapad-5: align both dt files
+47bb14518fe7	arm64: dts: qcom: x1p42100-ideapad-slim5x: align regulators with DSDT
+58294d2eb63d	arm64: dts: qcom: x1p42100-ideapad-slim5x: fix IO
+9d5710572b69	arm64: dts: qcom: x1p42100-ideapad-slim5x: relax l1i, l12b mV range
+3a1aa26aa33b	Build: amend rebuild.sh for arch detection
+a2fede019a9d	arm64: dts: qcom: x1p42100-ideapad-slim5x: disable hdmi, fix panel enable pin
+6310be3a52d4	arm64: dts: qcom: x1p42100-ideapad-slim5x: remove pwm definition
+f5bb2720539a	arm64: dts: qcom: x1-asus-zenbook: fixup GPU nodes
+bc38a58e7bb8	arm64: dts: qcom: x1-asus-zenbook: wcn and retimer changes
+64072cbdbb9d	arm64: dts: qcom: x1e001de-devkit-jg: define pcie4 as consumer for vreg_wcn_3p3
+407b52c68e03	rm64: dts: qcom: x1p42100-ideapad-5-2in1: adjust against slim5x
+954ffc4e4744	arm64: qcom: dt: add surface pro 12 inch
+7bbe9b342fb2	add sp12 to aggregator registry
+a330a7a00d11	align gpu node
+1d2ad35f229b	all ufs patches
+3d3a8203ae22	hopefully prevent burnout on mobo
+cd10fd261c78	arm64: qcom: dt: remove pm8010-thermal from visibility
+06d4151f9241	arm64: qcom: microsoft-sp12: enable EL2 dtb
+721c7ae177c8	arm64: qcom: asus-vivobook-s15-x1p4: define new ABI for this model
+65b01789af0c	arm64: qcom: microsoft-sp12: remove pm8010_thermal reference
+927ced8c08db	arm64: qcom: microsoft-sp12: enable EL2 dtb
+f83870367b31	arm64: dts: qcom: x1e80100: add empty mdss_dp3_out endpoint
+c879b0f8dfd0	arm64: dts: qcom: x1-acer-swift-14: add dp link frequencies, enable 4 lanes on type-c
+c6b5d7646bcc	arm64: dts: qcom: x1-asus-zenbook-a14: Add missing pinctrl for eDP HPD
+0a45ef26a5fd	arm64: dts: qcom: x1e78100-lenovo-thinkpad-t14s: Add missing pinctrl for eDP HPD
+e539613a1250	arm64: dts: qcom: x1e80100: add empty mdss_dp3_out endpoint
+b70dd6852e41	drm/msm/dp: force always train DP aux link on activation
+13aafccb8b0d	Ubuntu: change config to include driver for ATNA40CT01 panel
+4caf2b217323	arm64: dts: qcom: x1p42100-ideapad-5: minor fixes
+a39508af0aa2	arm64: dts: qcom: x126100-ideapad-slim3: Add Support for Ideapad Slim 3 15Q8X10
+07091ff41ee1	HACK: set compatible string for Ideapad 5 dtbs to boot from Ubuntu Concept ISO
+ce3d4574c8ca	arm64: dts: qcom: x1p42100-ideapad-5: minor fixes again
+5ed2bafee312	arm64: dts: qcom: x126100-ideapad-slim3: try the common sense approach
+f8ddfbe17a68	arm64: dts: qcom: x126100-ideapad-slim3: touchpad apparently has tlmm 67
+abf0865ef03e	arm64: dts: qcom: x126100-ideapad-slim3: disable touchpad gpio
+395d5d1da6a4	arm64: dts: qcom: x1e78100-t14s: add second-source touchscreen @41
+c25b549a2138	Ubuntu: correct setup to build with zfs 2.3.4
+5551931d717e	arm64: dts: qcom: x1e80100-asus-zenbook-a14: delete unused files
+f1962e297a55	qcom-x1e: add dynamic dtb list generation for stubble
+24d0e17f17d2	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add headset mode mux
+a90c93525cfb	build: add rebuild_t14s.sh with tweaks for the thermal capacity of my T14s
+ba34a33aacf9	phy: qcom: qmp-combo: Add explicit initial mode for static bridges
+ae0805597758	phy: qcom: qmp-combo: fixup: add missing else statement
+afaf841301f4	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hdmi bridge with enable pin
+d4d50278ceb5	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: force usb2-only mode on usb_1_ss2_dwc3
+a4929cb85232	phy: qcom: qmp-combo: Move pipe_clk on/off to common
+1c50ff070cc6	phy: qcom: qmp-combo: change disable order in qmp_combo_com_exit
+59246acb6fda	arm64: dts: qcom: x1e80100: correct usage of edp0_hpd_default pinctrl
+c916b35a7931	Revert "arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hpd gpio to dp controller, fix backlight"
+657efac4dd3e	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: re-add edp0_hpd_default pinctrl
+de6bb84643dd	arm64: dts: qcom: follow `hamoa` rename
+4bdb20c78bd6	arm64: dts: qcom: x1-vivobook-s15: add HDMI port and charge limiting
+86fd33290612	arm64: dts: qcom: medion-sprchrgd-14-s1: add Thinkpad T14s compatible
+ac025eab62cf	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: move hdmi_bridge_en to gpio120
+a532a036e8cc	arm64: dts: qcom: medion-sprchrgd-14-s1: extend gpio-reserved-ranges
+58cc66a37d14	arm64: dts: qcom: x1p42100-ideapad-slim5x: Split for OLED and LCD variants
+b464e299eea3	arm64: dts: qcom: x126100-ideapad-slim3: fix up mic channels and vregs
+aee3dd827842	arm64: dts: qcom: medion-sprchrgd-14-s1: remove Soundwire on DP
+e6467b4f921e	drm/msm/dpu/x1e80100: change clk_inefficiency_factor to 104
+2f716d1a11e6	arm64: dts: qcom: amend dtsi names to haoma, purwa
+03dc7ceed790	Ubuntu: update annotations, set version to 6.19-rc7-jg-0
+0545f840fa54	Ubuntu: update version to 6.19.0-rc8-jg-0
+ffd200f4205e	Ubuntu: kill LLVM=1, create ubuntu_x1e_defconfig
+23cde52b99e8	Ubuntu: fix up build config
+3f8e33ee733a	Ubuntu: update version to 6.19.0-rc8-jg-1
+1b26ac072536	Ubuntu: update version to 6.19.0-jg-0
+65c9c2cff364	phy: qcom: qmp-combo: Prevent unnecessary PM runtime suspend at boot
+54bd0eb9f539	arm64: dts: qcom: Add support for X1P42100-based Surface Pro 11
+caa688933a14	arm64: dts: qcom: x1-denali: separate firmware paths from dtsi
+5e32b150730f	arm64: dts: qcom: x1-denali: efivars: add lenovo,thinkpad-t14s compatible for older kernels
+a19fcea64253	Ubuntu: update version to 6.19.0-jg-1
+0824406ab556	arm64: dts: qcom: x1-microsoft-denali: Disable rfkill for wifi0
+d6e6bc2df2f1	HACK: Workaround suspend/resume issues on SP11
+5875c41c0d23	Ubuntu: update version to 6.19.0-jg-2
+1accb01b79a3	arm64: dts: qcom: x1p-denali: add backlight pwm wiring
+e472ff6218b6	arm64: dts: qcom: x1p42100-sp12: iteration from original sp12 dt
+58fe730106c4	Ubuntu: update version to 6.19.6-jg-0
+e5ccca7f0012	Ubuntu: update annotations with defconfig from toolchain
+3ab3fe29634d	Ubuntu: stubble: change path to /usr/local/
+52499f7034b8	Ubuntu: update version to 6.19.6-jg-1
+0d80cc19269c	arm64: dts: qcom: Un-hallucinate X1P42100-based Surface Pro 11
+832366ff28ca	arm64: dts: qcom: sm8550: Fix xo clock supply of platform SD host controller
+d1b173bbd18e	arm64: dts: qcom: sm8650: Fix xo clock supply of SD host controller
+7bdec3401b6c	arm64: dts: qcom: hamoa: Fix xo clock supply of platform SD host controller
+1e69844e32b0	arm64: dts: qcom: sm8450: Enable UHS-I SDR50 and SDR104 SD card modes
+2481620e1b2b	arm64: dts: qcom: sm8550: Enable UHS-I SDR50 and SDR104 SD card modes
+0f165f9e2c71	arm64: dts: qcom: sm8650: Enable UHS-I SDR50 and SDR104 SD card modes
+027d99f25167	Ubuntu: update version to 6.19.6-jg-3
+6068c5b2c3e6	arm64: dts: qcom: x1-el2: add 40-bit dma-ranges/ranges for EL2
+4d45345bdb95	Ubuntu: update version to 6.19.6-jg-4
+a72a074b3d10	dt-bindings: platform: introduce EC for Dell XPS 13 9345
+91f3b026391c	platform: arm64: dell-xps-ec: new driver
+86a28becc6b3	arm64: dts: qcom: hamoa-pmics: define VADC for pmk8550
+68b831288f1d	arm64: dts: qcom: x1e80100-dell-xps13-9345: introduce EC
+fac6f71361e3	Ubuntu: Update version to 6.19.6-jg-5
+910905bda7ca	dt-bindings: iio: adc: Split out QCOM VADC channel properties
+2adac779ce71	dt-bindings: iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+bd9bfcbca69c	iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+5874b0aff67b	thermal: qcom: add support for PMIC5 Gen3 ADC thermal monitoring
+da7bec826249	Ubuntu: update annotations and ubuntu_x1e_defconfig
+72c6dd29afef	Ubuntu: update version to 6.19.6-jg-6
+c34c5cef61ea	arm64: dts: qcom: x126100-ideapad-slim3: define vreg_pcie3_nvme_3p3
+cb7ea5d97d56	dt-bindings: embedded-controller: Add Qualcomm reference device EC description
+68bc08b8db76	platform: arm64: Add driver for EC found on Qualcomm reference devices
+47ebabf7c373	arm64: dts: qcom: glymur-crd: Add Embedded controller node
+4e8a0b7dde7f	arm64: dts: qcom: x1-crd: Add Embedded controller node
+2a387a225fbf	arm64: dts: qcom: hamoa-iot-evk: Add Embedded controller node
+27d017ea3120	arm64: dts: qcom: x126100-ideapad-slim3: Add Embedded controller node
+a4286015e9a0	arm64: dts: qcom: x126100-ideapad-slim3: remove smb2360_1
+c1007239da14	Ubuntu: Update version and config to 6.19.10-jg-0
+be73736ddcff	Ubuntu: Update version and config to 6.19.12-jg-0
+e30eededb245	arm64: dts: qcom: x126100-ideapad-slim3: enable nvme regs as always on
+f366f0fac773	fix ufs spam
+1cf24e6af748	Ubuntu: update version to 6.19.12-jg-1
+813a2d43b16f	ASoC: qcom: q6apm: remove child devices when apm is removed
+a0e4c7abb841	ASoC: qcom: qdsp6: topology: check widget type before accessing data
+c80819e94901	ASoC: qcom: q6apm-lpass-dai: Fix multiple graph opens
+1a1affa4fd0b	ASoC: qcom: q6apm-dai: reset queue ptr on trigger stop
+90da013e655e	ASoC: dt-bindings: qcom: add LPASS LPI MI2S dai ids
+76442e31ed7a	ASoC: qcom: common: validate cpu dai id during parsing
+c6be831dbea0	ASoC: qcom: qdsp6: lpass-ports: add support for LPASS LPI MI2S dais
+59c2e0a87704	ASoC: qcom: q6dsp: Add Senary MI2S audio interface support
+b6bd1f2ebb45	ASoC: qcom: qdapm-lpass-dai: correct the error message
+b01ec1727d29	ASoC: qcom: q6apm-lpass-dai: move graph start to trigger
+d0739b4f8d3f	Ubuntu: update vesion to 6.19.12-jg-2
+11b2f09103fc	Ubuntu: update to 6.12.13-jg-0
+72b34bed8486	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add displayport backend DAIs
+8cbcf81e5635	drm/msm/dp: implement dp_audio_startup to guard against unconnected state
+e84c55ce8316	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: enable gpi_dma controllers
+3ee54161dc11	Ubuntu: update version to 6.19.13-jg-1
+bc2e6b501a3b	arm64: dts: qcom: hamoa: add audio PD remote heap region
+2db15c398aba	usb: typec: mux: ps883x: Power the retimer off when not in use
+1bda56d5debb	ASoC: qcom: x1e80100: limit speaker volumes
+312a7a3478a1	dts: qcom: Add surface pro 12inch device tree
+8c5395f5010c	clk: qcom: x1e80100-dispcc: Stop disp_cc_mdss_mdp_clk_src from getting parked
+9329ca3a0ca6	Ubuntu: update version to 6.19.13-jg-2
+6ad5d0d09a8d	clk: qcom: dispcc-sc8280xp: Don't park mdp_clk_src at registration time
+b2f709985c8b	arm64: dts: qcom: sc8280xp-blackrock: rework audio section
+73910ead60e7	Ubuntu: Update version to 6.19.14-jg-0
+a33ae195e88a	drm/msm/dpu: Add DSPP GC driver to provide GAMMA_LUT DRM property
+72508b8ba1f0	drm/msm/dpu: fix mismatch between power and frequency
+7ca393105ac7	arm64: dts: x1e001de-devkit: add sgerhold's final dt, update -jg variant for sound
+10af660ce3e5	arm64: dts: make changes for x1e001de-devkit
+297c406a15f8	arm64: dts: qcom: x1e001-devkit-jg: add dp sound DAIs
+fbb2743895fb	Ubuntu: update version to 6.19.14-jg-1
+431856f53ff3	Update ufs to match current upstream
+e6a4bdee4e29	update sam sp12 to remove missiing devices
+503e6872038d	arm64: dts: qcom: hamoa: re-add ICE and link to ufs controller
+54f45683dfc3	arm64: dts: qcom: hamoa: Disable crypto blocks by default
+3fa439196e79	arm64: dts: qcom: microsoft-sp12: enable ICE node
+50e80a04ef9a	arm64: dts: qcom: microsoft-sp12: add dp altmode retimers
+d674e1e53cb0	Ubuntu: Update version to 6.19.14-jg-2
+7f09e0f67dc3	update sp12.dts
+7f92331918f9	arm64: dts: qcom: microsoft-sp12: refine the working patch from Harrison
+259ed7718864	dts: arm64: qcom: x1-ideapad-slim3: add 2s startup-delay on pcie3 vreg
+8dc6d66915bd	arm64: dts: qcom: microsoft-sp12: add DisplayPort DAIs
+7e3f3c0f555e	Ubuntu: update version to 6.19.14-jg-3
+11ae2a6dffe9	arm64: dts: qcom: x1p42100-ideapad-slim5x: Fix display brightness regression
+56ba76350876	debian/rules: limit target dtbs_install to -j1
+ceab637ac377	arm64: dts: qcom: x1: Add x1-el2-pas.dtso for PAS-managed remoteproc
+813fde45e579	arm64: dts: qcom: idepad-5-2in1: remove backlight gpio
+c70fd48c728a	Ubuntu: enable zfs modules-build
+f821b988feab	arm64: dts: qcom: idepad-5-2in1: enable hdmi, fp-reader, dp sound
+211ee21e2ff8	arm64: dts: qcom: idepad-slim5x: update from working ip5 2in1
+d0f38cd09a44	drm/msm/dp: Do not fail audio prepare when DP is inactive
+fb231dc71fc9	arm64: dts: qcom: x1e001-devkit-jg: add variant from 6.19.y
+91ce372292b6	arm64: dts: qcom: x1-asus-vivobook-s15: add 4-speaker 3-dp sound nodes
+8d1b68a92a50	arm64: dts: qcom: sc8280xp-blackrock: correct usb phy power supply
+e2c46c019aa0	Ubuntu: update changelog to 6.19.14-jg-4

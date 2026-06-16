@@ -1,0 +1,49 @@
+• One changelog item, ASoC: qcom: q6apm-dai: Allocate an extra page for PCM buffers, does not appear as a commit
+  subject in the local JG repo scan so far, even though it is in the changelog. I’ll still report it as missing by
+  changelog subject.
+
+────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+• I compared jglathe-ubuntu-arm64/debian.qcom-x1e/changelog against steev-linux on branch lenovo-t14s-linux-7.0.y,
+  using Steev’s branch-local range after Linux 7.0.12 (f53879e2e1e2..HEAD) plus spot checks for files/content.
+
+  Already present in Steev, so not missing:
+
+  03b5e1e53643  firmware: psci: Set pm_set_resume/suspend_via_firmware() for SYSTEM_SUSPEND
+  5ac4a22393cd  clk: qcom: x1e80100-dispcc: Stop disp_cc_mdss_mdp_clk_src from getting parked
+  d1aed902fefb  usb: typec: mux: ps883x: Power the retimer off when not in use
+  4609649379c0  arm64: dts: qcom: hamoa: add audio PD remote heap region
+  16b77ddd24b0  ASoC: qcom: x1e80100: limit speaker volumes
+  ab14bbedd0f3  drm/msm/dp: implement dp_audio_startup to guard against unconnected state
+
+  Missing kernel changesets from the changelog:
+
+  fb231dc71fc9  arm64: dts: qcom: x1e001-devkit-jg: add variant from 6.19.y
+  d0f38cd09a44  drm/msm/dp: Do not fail audio prepare when DP is inactive
+  211ee21e2ff8  arm64: dts: qcom: idepad-slim5x: update from working ip5 2in1
+  f821b988feab  arm64: dts: qcom: idepad-5-2in1: enable hdmi, fp-reader, dp sound
+  8d1b68a92a50  arm64: dts: qcom: sc8280xp-blackrock: correct usb phy power supply
+  11ae2a6dffe9  arm64: dts: qcom: x1p42100-ideapad-slim5x: Fix display brightness regression
+  813fde45e579  arm64: dts: qcom: idepad-5-2in1: remove backlight gpio
+  ceab637ac377  arm64: dts: qcom: x1: Add x1-el2-pas.dtso for PAS-managed remoteproc
+  8dc6d66915bd  arm64: dts: qcom: microsoft-sp12: add DisplayPort DAIs
+  50e80a04ef9a  arm64: dts: qcom: microsoft-sp12: add dp altmode retimers
+  72508b8ba1f0  drm/msm/dpu: fix mismatch between power and frequency
+  a33ae195e88a  drm/msm/dpu: Add DSPP GC driver to provide GAMMA_LUT DRM property
+  b2f709985c8b  arm64: dts: qcom: sc8280xp-blackrock: rework audio section
+  6fcd1cf574ba  ASoC: codecs: lpass-wsa-macro: Switch to PM clock framework for runtime PM
+  c7db8e3f6c44  ASoC: codecs: lpass-va-macro: Switch to PM clock framework for runtime PM
+  6ad5d0d09a8d  clk: qcom: dispcc-sc8280xp: Don't park mdp_clk_src at registration time
+  d62c180a4dab  drm/panel-edp Add surface pro 12inch panel NE120DRM-N28
+  312a7a3478a1  dts: qcom: Add surface pro 12inch device tree
+  72b34bed8486  arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add displayport backend DAIs
+  e84c55ce8316  arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: enable gpi_dma controllers
+  b54035cd56ee  drm/panel-edp: add panel CMN 0x1476 N140JCE-EL1
+  6068c5b2c3e6  arm64: dts: qcom: x1-el2: add 40-bit dma-ranges/ranges for EL2
+  5874b0aff67b  thermal: qcom: add support for PMIC5 Gen3 ADC thermal monitoring
+  bd9bfcbca69c  iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+  2adac779ce71  dt-bindings: iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+
+  Also missing by changelog subject, but I did not find a matching JG commit subject locally:
+
+  ASoC: qcom: q6apm-dai: Allocate an extra page for PCM buffers

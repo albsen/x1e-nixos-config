@@ -1,0 +1,337 @@
+36a4a8321a66	clk: qcom: Return correct error code in qcom_cc_probe_by_index()
+21655687628b	arm64: dts: qcom: sdm630: fix gpu_speed_bin size
+d233f0faca95	arm64: dts: qcom: sm8150-hdk,mtp: specify ZAP firmware name
+7da41ab009ae	arm64: dts: qcom: sm8250-hdk: specify ZAP firmware name
+771e2bc9c0f3	arm64: dts: qcom: sdm850-huawei-matebook-e-2019: Remove duplicate reserved-memroy nodes
+7d297c9404e8	arm64: dts: qcom: sdm850-huawei-matebook-e-2019: Correct ipa_fw_mem for the driver to load successfully
+532ffc1d30d8	arm64: dts: qcom: sdm845-oneplus: Don't mark ts supply boot-on
+eb80b6f515c9	arm64: dts: qcom: sdm845-oneplus: Don't keep panel regulator always on
+06beb199056e	arm64: dts: qcom: sdm845-oneplus: Mark l14a regulator as boot-on
+592ad5bbbffd	arm64: dts: qcom: x1e80100: Fix USB combo PHYs SS1 and SS2 ref clocks
+b99770391275	arm64: dts: qcom: msm8994-octagon: Fix Analog Devices vendor prefix of AD7147
+07e3a20a5c33	arm64: dts: qcom: qrb4210-rb2: Fix UART3 wakeup IRQ storm
+9ae31f0d5023	arm64: dts: qcom: sdm845-db845c: drop CS from SPIO0
+8b5d2cf2d5cd	arm64: dts: qcom: sdm845-db845c: specify power for WiFi CH1
+3f56b4e18ab1	arm64: dts: qcom: x1e: bus is 40-bits (fix 64GB models)
+8b6752225faa	arm64: dts: qcom: talos: Drop opp-shared from QUP OPP table
+dacb856c6449	arm64: dts: qcom: agatti: Add CX_MEM/DBGC GPU regions
+08545ced62ac	arm64: dts: qcom: sm6115: Add CX_MEM/DBGC GPU regions
+0b8c992a076d	drm/msm/disp/dpu: add merge3d support for sc7280
+2d1f42eae9c2	drm/msm/dpu: Set vsync source irrespective of mdp top support
+5588ca89b062	drm/msm/dpu: fix WD timer handling on DPU 8.x
+668c2e5cf8f3	drm/msm/dp: Update msm_dp_controller IDs for sa8775p
+95928006d4f5	drm/msm/disp: set num_planes to 1 for interleaved YUV formats
+00adaf574680	drm/msm/dpu: drop intr_start from DPU 3.x catalog files
+0d1f1acb26f4	drm/msm/dpu: fix CMD panels on DPU 1.x - 3.x
+6287f89fe374	drm/msm/dsi_phy_14nm: convert from divider_round_rate() to divider_determine_rate()
+5f11f8c07ee2	drm/msm: Fix x2-85 TPL1_DBG_ECO_CNTL1
+5d8e240f4cd8	drm/msm: Fix GMEM_BASE for gen8
+c4ce85a5ed77	drm/msm/a2xx: fix pixel shader start on A225
+fa4483eda623	drm/msm/mdss: correct HBB programmed on UBWC 5.x and 6.x devices
+f906eb66f4cb	drm/msm/dpu: offset HBB values written to DPU by -13
+a7aa2a7394b1	drm/msm/dpu: program correct register for UBWC config on DPU 8.x+
+e4a184ce416a	drm/msm/dpu: fix SSPP_UBWC_STATIC_CTRL programming on UBWC 5.x+
+ffacee066c0d	drm/msm/dp: Avoid division by zero in msm_dp_ctrl_config_msa()
+70999298b5f8	clk: qcom: gcc-sm8550: Use floor ops for SDCC RCGs
+4936dd068243	clk: qcom: gcc-sm8650: Use floor ops for SDCC RCGs
+e8ebb54c2727	clk: qcom: rcg2: compute 2d using duty fraction directly
+55d95fb4e066	clk: qcom: gcc-sm8450: Update the SDCC RCGs to use shared_floor_ops
+e495856e3681	clk: qcom: gcc-sm8750: Update the SDCC RCGs to use shared_floor_ops
+caa39d54b6dd	clk: qcom: gcc-sm4450: Update the SDCC RCGs to use shared_floor_ops
+32225387934b	clk: qcom: gcc-sdx75: Update the SDCC RCGs to use shared_floor_ops
+94cfb5dfda9b	clk: qcom: gcc-milos: Update the SDCC RCGs to use shared_floor_ops
+878776b77852	clk: qcom: gcc-x1e80100: Update the SDCC RCGs to use shared_floor_ops
+29549d97ef5c	clk: qcom: gcc-qdu1000: Update the SDCC RCGs to use shared_floor_ops
+aa43258c4e3b	clk: qcom: gcc-glymur: Update the SDCC RCGs to use shared_floor_ops
+6ef4c74ca624	clk: qcom: gcc-msm8953: Remove ALWAYS_ON flag from cpp_gdsc
+937d4c64f6bc	clk: qcom: gcc-msm8917: Remove ALWAYS_ON flag from cpp_gdsc
+91715cd027ee	clk: qcom: gcc-ipq5018: flag sleep clock as critical
+cede50ad3dde	clk: qcom: alpha-pll: convert from divider_round_rate() to divider_determine_rate()
+7243437d9ccf	clk: qcom: regmap-divider: convert from divider_ro_round_rate() to divider_ro_determine_rate()
+f7194f96a855	clk: qcom: regmap-divider: convert from divider_round_rate() to divider_determine_rate()
+c47b6a0f1486	clk: qcom: dispcc-sdm845: Enable parents for pixel clocks
+850f56635d22	clk: qcom: dispcc-sm7150: Fix dispcc_mdss_pclk1_clk_src
+8aa972eba1f2	clk: qcom: gfx3d: add parent to parent request map
+facb9b031fe3	dt-bindings: phy: qcom-edp: Add missing clock for X Elite
+3249251eac60	ASoC: qcom: q6asm: drop DSP responses for closed data streams
+1eae4eddb858	phy: qcom: edp: Make the number of clocks flexible
+2cec13cd55bc	arm64: dts: qcom: sdm630: Add missing MDSS reset
+01e6fe56c1fc	arm64: dts: qcom: x1e80100: Add missing TCSR ref clock to the DP PHYs
+122a47bb91fa	arm64: dts: qcom: sm8750: Fix BAM DMA probing
+b718a610b3a6	drm/msm/dpu: Fix LM size on a number of platforms
+e602b16c8cf7	drm/msm/dsi: fix hdisplay calculation when programming dsi registers
+8b7db7197f47	drm/msm/a6xx: Fix the bogus protect error on X2-85
+9b1a6358e5c1	drm/msm/a8xx: Fix ubwc config related to swizzling
+33c8dba6894d	drm/msm/dsi: fix pclk rate calculation for bonded dsi
+897f32cab794	ASoC: qcom: qdsp6: Fix q6apm remove ordering during ADSP stop and start
+de55c4f6f372	drm/msm: Fix dma_free_attrs() buffer size
+d2f8446b25b0	drm/msm/dpu: Correct the SA8775P intr_underrun/intr_underrun index
+ab85f627c449	phy: qcom: qmp-ufs: Fix SM8650 PCS table for Gear 4
+820cb270d9df	arm64: dts: qcom: hamoa/x1: fix idle exit latency
+3f97aadcfe74	arm64: dts: qcom: qcm6490-idp: Fix WCD9370 reset GPIO polarity
+686ccd598a8c	arm64: dts: qcom: monaco: Fix UART10 pinconf
+59bd9088336d	arm64: dts: qcom: monaco: Reserve full Gunyah metadata region
+f7b790531cda	ASoC: qcom: q6apm: move component registration to unmanaged version
+eb0be2df0d94	arm64: dts: qcom: x1e80100: Add CAMCC block definition
+a63840ffe14e	arm64: dts: qcom: x1e80100: Add CCI definitions
+73981479b578	arm64: dts: qcom: x1e80100: Add MIPI CSI PHY nodes
+1de47680889f	arm64: dts: qcom: x1e80100: Add CAMSS block definition
+1e28cf7c58c5	arm64: dts: qcom: x1e80100-crd: Add pm8010 CRD pmic,id=m regulators
+8f56a6d9e164	arm64: dts: qcom: x1e80100-crd: Add ov08x40 RGB sensor on CSIPHY4
+c509d99244d8	arm64: dts: qcom: x1e80100-t14s: Add pm8010 camera PMIC with voltage levels for IR and RGB camera
+5cd02eea17f6	arm64: dts: qcom: x1e80100-t14s: Add on ov02c10 RGB sensor on CSIPHY4
+f519fe4532a6	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: Add pm8010 camera PMIC with voltage levels for IR and RGB camera
+4bc50bf827d9	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: Add OV02E10 RGB sensor on CSIPHY4
+1454d8bd4b5f	dt-bindings: phy: qcom: Add MIPI CSI2 C-PHY/DPHY Combo schema
+8128fc509366	phy: qcom-mipi-csi2: Add a CSI2 MIPI D-PHY driver
+73242f448c6e	Revert "dt-bindings: phy: qcom,sc8280xp-qmp-usb43dp: Reference usb-switch.yaml to allow mode-switch"
+ec631f6d3995	dt-bindings: phy: qcom,sc8280xp-qmp-usb43dp: Add mode-switch
+45b2ab1b92ff	ASoC: dt-bindings: qcom,sm8250: Add Dell XPS13 9345 sound card
+f90b9a052331	ASoC: qcom: x1e80100: Add Dell XPS13 9345 support
+4f958ce9f469	arm64: dts: qcom: x1e80100-dell-xps13-9345: Add Left/Right Speakers and Tweeter
+95c99b9b9297	arm64: dts: qcom: x1e80100-dell-xps13-9345: enable MICs LDO
+7e75656ce07f	arm64: dts: qcom: x1e80100-dell-xps13-9345: Disable the debug UART
+da86e26b47c3	wip: arm64: dts: qcom: x1e80100-crd: Add WiFi/BT pwrseq
+84c6b96b1c09	wip: arm64: dts: qcom: x1e78100-t14s: enable bluetooth
+500f466acc8a	arm64: dts: qcom: x1e80100-dell-xps13-9345: add camera support
+79198246d095	arm64: dts: qcom: x1e80100-dell-xps13-9345: Switch to CSIPHY4 description
+835ba096bf74	arm64: dts: qcom: sc8280xp: Add Venus
+4be936ce6619	arm64: dts: qcom: sc8280xp-x13s: Enable Venus
+5d6ae01acf7a	arm64: dts: qcom: x1e78100-t14s: Add audio playback over DisplayPort
+e2f792619e37	arm64: dts: qcom: sc7180-el2: Set correct owner for SCM SHM bridge
+602d61573e15	arm64: dts: qcom: sc8280xp-el2: Set correct owner for SCM SHM bridge
+d547b138b38b	arm64: dts: qcom: x1-el2: Set correct owner for SCM SHM bridge
+d2702b9e5a1e	arm64: dts: qcom: sc8280xp-el2: Add venus video-firmware node
+fa513995b540	arm64: dts: qcom: x1-el2: Add iris video-firmware node
+938a59336bdb	arm64: dts: qcom: sc7180-el2: Add qcom,broken-reset where needed
+dc3c1fb9fd14	arm64: dts: qcom: sc8280xp-el2: Add qcom,broken-reset for remoteprocs
+01e52bd1f2bc	arm64: dts: qcom: x1-el2: Add qcom,broken-reset for remoteprocs
+252e11e59f28	arm64: dts: qcom: hamoa: Add the APSS watchdog
+bb68c9501284	arm64: dts: qcom: x1-el2: Enable the APSS watchdog
+ad1926c76cc2	arm64: defconfig: Switch on DMABUF_HEAPS
+63b03204958a	arm64: defconfig: Switch on CONFIG_DMABUF_HEAPS_SYSTEM
+332cd33a6019	arm64: defconfig: Switch on VIDEO_OV08X40
+30d1c2dc743a	arm64: defconfig: CONFIG_UDMABUF=y
+4e5d557eeb17	arm64: defconfig: Build OmniVision OV5675 as module
+16a6a037237c	arm64: defconfig: Build OmniVision OV02E10 as module
+36ff7e048be7	arm64: defconfig: Build OmniVision OV02C10 as module
+9e0c29cc97a0	arm64: defconfig: Build Qualcomm SM8350 video clock controller as module
+bda07ab315b7	arm64: defconfig: Enable crypto user api hash and skcipher
+1ec31f95b1e9	arm64: defconfig: Enable EC drivers for Qualcomm-based laptops
+9ba3245e6871	arm64: qcom_laptops.config: Add useful features for laptops
+6766e8e3e05b	arm64: qcom_laptops.config: Disable other SoC architectures and GPUs
+3400449da6de	arm64: qcom_laptops.config: Enable SQUASHFS_XATTR for distros
+d7a8de077d69	arm64: qcom_laptops.config: Enable EXFAT_FS
+7348ede72e34	arm64: qcom_laptops.config: Enable SECURITY_LANDLOCK
+005a06e484e7	arm64: qcom_laptops.config: Enable Qualcomm SCM SHM bridge
+ba981e51c815	arm64: qcom_laptops.config: Enable BT_LE
+ddb628f135ab	arm64: qcom_laptops.config: Enable UHID
+ff760639a383	Revert "UBUNTU: SAUCE: Change: cracking sound fix"
+565c6a7c4f09	Revert "UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-asus-zenbook-a14: Enable WiFi, Bluetooth"
+0bb10452ef3e	Revert "UBUNTU: SAUCE: arm64: dts: qcom: x1e80100-dell-xps13-9345: Mark audio channels as left-right swapped"
+ce093969a4a7	arm64: dts: qcom: x1e80100-dell-xps13-9345: add debug uart
+e6c3b3e81b0d	arm64: dts: qcom: x1e78100-lenovo-thinkpad-t14s: add HDMI nodes
+fcdad9208f0f	fixup!: arm64: dts: qcom: sc8280xp: Add Venus
+135fc7e3d096	arm64: dts: qcom: x1e80100-asus-zenbook-a14: Enable WiFi, Bluetooth
+4384da718965	arm64: dts: qcom: Add dts for Medion SPRCHRGD 14 S1
+53e5d642a6d3	arm64: dts: qcom: x1e80100-medion-sprchrgd-14-s1: correct firmware paths
+49af570f09b7	dt-bindings: arm: qcom: Add TUXEDO Computers device
+574fe6b525ba	dt-bindings: arm: qcom: Add Medion SPRCHRGD device
+0a8f475e32d2	dt-bindings: arm: qcom: Document Microsoft Surface Pro 11
+881c2f1e95b0	arm64: dts: qcom: Add support for X1-based Surface Pro 11
+8c2241c655d2	dt-bindings: arm: qcom: Document Microsoft Surface Pro 11
+9641023f511f	platform/surface: aggregator_registry: Add Surface Pro 11 (QCOM)
+b4b8324dc0cd	arm64: dts: qcom: Add support for X1-based Surface Pro 11
+ec8b11ca3dea	drm/msm/dp: Enable support for eDP v1.4+ link rates table
+f5e1c8932731	drm/msm/dp: add debug code in dp_ctrl_on_stream
+7207e66a8bea	dt: el2: pcie-smmu: amend msi-parent definition to 0x40000
+2da1759c7135	arm64: dts: qcom: sc8280xp-x13s: set the bluetooth address with the local-bd-address property
+40efc317035a	arm64: dts: qcom: sc8280xp-blackrock: set local bd-address, add venus codec
+8f61df2280cb	arm64: dts: qcom: sc8280xp-x13s: correct cooling map identifiers
+d4d0d3fb9561	arm64: dts: qcom: x1e001de-devkit: device tree for SnapDragon Dev Kit
+5eff7929d777	arm64: dts: qcom: sc8280xp-blackrock: switch to uefi rtc offset
+f47c10b6e5e3	arm64: dts: qcom: x1e80100: "I beg to differ" changes contrary to jhovold/wip
+d0faf9b7d78e	arm64: dts: qcom: x1e80100-vivobook-s15: add dp altmode support, sound
+dab240da8e64	arm64: dts: qcom: x1e80100-vivobook-s15: make sound distinct
+0fcf087cfc96	arm64: dts: qcom: add link frequncies for dp altmode links
+c1d1404090e8	arm64: dts: qcom: x1e001de-devkit: enable pcie3 and mdss_dp3
+0dfdf3651c4e	arm64: dts: qcom: x1e001de-devkit: add pcie3 pinctrl
+89b95d7229e0	arm64: dts: qcom: x1e001de-devkit: amend pcie3 pinctrl, complete dp connector
+3cf61a876bfa	arm64: dts: qcom: x1e001de-devkit: split into 2 versions
+3a9174e4f06c	arm64: dts: qcom: x1-vivobook-s15: create separate variants for x1e*/x1p6* and x1p4*
+5523384426b1	arm64: dts: qcom: x1e001de-devkit: compare/amend vs CRD
+fcfdd9f126b5	arm64: dts: qcom: x1e80100-vivobook-s15: mark l12b and l15b always-on
+c8e14e0a2423	arm64: dts: qcom: x1e80100-dell-xps13-9345: delete pm8010@c node
+02b60e1557e3	arm64: dts: qcom: x1e001de-devkit: set all USB controllers to host mode
+e1abeb78b7ba	arm64: dts: qcom: Add support for X1-based Asus Zenbook A14
+dd36c7ffe6ec	arm64: dts: qcom: support sound on Asus Zenbook A14
+046cae6c1650	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: remove codec, add EC node
+8b6913e61494	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: add EC pinctrl
+d0d809c567ad	arm64: dts: qcom: x1p64100-acer-sf14: commonalize Acer Swift AI dt
+4a4146546eab	arm64: dts: qcom: x1-acer-swift-14: add support for Swift Go 14 AI
+872e3840310c	arm64: dts: qcom: x1-asus-vivobook-s15: Fix vreg_l2j_1p2 voltage
+6825fa2818c0	dt-bindings: platform: Add bindings for Qcom's EC on IT8987
+2ff507cc9c0e	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: Add the EC
+130913cb0fd2	arm64: dts: qcom: x1e001de-devkit: add (rudimentary) DMICs, spawn -jg variant
+9f96d1734e93	arm64: dts: qcom: x1e80100: add epd hpd pinctrl
+bc8935547e12	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hpd gpio to dp controller, fix backlight
+a8f9c244d151	arm64: dts: qcom: x1e80100-dell-xps13-9345: Enable fingerprint sensor
+e2dce5b3dbaa	arm64: dts: qcom: x1e001de-devkit-jg: add port definition for I226V
+9b39ad36bc55	arm64: dts: qcom: x1e001de-devkit-jg: set the i226V config to a working configuration
+e8481f08f3f9	arm64: dts: qcom: x1e001de-devkit-jg: Enable 4 lane DP mode
+be1cc2b9416d	arm64: dts: qcom: sc8280xp: Add mode-switch to all USB+DP QMP PHYs
+2f606f344bd9	arm64: dts: qcom: sc8280xp-blackrock: enable 4 lanes DP mode
+3131f4aff1f7	arm64: dts: qcom: sc8280xp-x13s: remove slpi firmware
+65d5e101d795	usb: typec: mux: add debug code
+4bbd11742333	dt-bindings: arm: qcom: Clean-up of ambiguous compatibility strings
+1f9466f1395d	arm64: dts: qcom: x1*: Remove qcom,sm8550-pmic-glink fallback
+e9a5074cfe0d	arm64: dts: qcom: x1*: Remove qcom,sm8550-pmic-glink fallback
+a2bb00132009	arm64: dts: qcom: x1p42100: Add support for Lenovo Ideapad 5 14Q8X9
+33895bb27383	arm64: defconfig: Enable X1P42100_GPUCC driver
+04f793f4c8ae	dt: arm64: qcom: sc8280xp-blackrock: amend usb0-sbu-mux enable gpio
+d0001e83cea0	arm64: dts: qcom: x1e001de-devkit-jg: adjust to original
+3408a4b04d49	dt-bindings: display: panel: samsung,atna40ct01: document ATNA40CT01
+c8da9aa19d04	arm64: dts: qcom: x1p42100: Split dt for Ideapad 5 variants
+7a3411858ae8	arm64: dts: qcom: x1-asus-vivobook-s15: Enable 4 lane DP mode
+d1b9794081ec	arm64: dts: qcom: x1p42100: remove backlight pwm for Ideapad 5 variants
+5993ab5239fc	arm64: dts: qcom: x1p42100-ideapad-slim5x: Limit link speed on pcie3 to 1
+d43359c4ebd1	arm64: dts: qcom: x1e80100-lenovo-yoga-slim7x: add Bluetooth support
+0c8c7a00354e	arm64: dts: qcom: x1e001de-devkit-jg: remove pmu-wcn7850 regulators
+3294909c881c	arm64: dts: qcom: x1p42100-ideapad-slim5x: amend against tb16, remove cam supply
+496fbbdb20c3	arm64: dts: qcom: x1p42100-ideapad-slim5x: use edp panel, t14s-style pwm backlight
+19a44b8ce73d	arm64: dts: qcom: x1p42100-ideapad-slim5x: adjust regulators layout according to error msgs
+2ba206ae1c34	arm64: dts: qcom: x1p42100-ideapad-5: align both dt files
+47bb14518fe7	arm64: dts: qcom: x1p42100-ideapad-slim5x: align regulators with DSDT
+58294d2eb63d	arm64: dts: qcom: x1p42100-ideapad-slim5x: fix IO
+9d5710572b69	arm64: dts: qcom: x1p42100-ideapad-slim5x: relax l1i, l12b mV range
+a2fede019a9d	arm64: dts: qcom: x1p42100-ideapad-slim5x: disable hdmi, fix panel enable pin
+6310be3a52d4	arm64: dts: qcom: x1p42100-ideapad-slim5x: remove pwm definition
+f5bb2720539a	arm64: dts: qcom: x1-asus-zenbook: fixup GPU nodes
+bc38a58e7bb8	arm64: dts: qcom: x1-asus-zenbook: wcn and retimer changes
+64072cbdbb9d	arm64: dts: qcom: x1e001de-devkit-jg: define pcie4 as consumer for vreg_wcn_3p3
+407b52c68e03	rm64: dts: qcom: x1p42100-ideapad-5-2in1: adjust against slim5x
+954ffc4e4744	arm64: qcom: dt: add surface pro 12 inch
+7bbe9b342fb2	add sp12 to aggregator registry
+a330a7a00d11	align gpu node
+1d2ad35f229b	all ufs patches
+3d3a8203ae22	hopefully prevent burnout on mobo
+cd10fd261c78	arm64: qcom: dt: remove pm8010-thermal from visibility
+06d4151f9241	arm64: qcom: microsoft-sp12: enable EL2 dtb
+721c7ae177c8	arm64: qcom: asus-vivobook-s15-x1p4: define new ABI for this model
+65b01789af0c	arm64: qcom: microsoft-sp12: remove pm8010_thermal reference
+927ced8c08db	arm64: qcom: microsoft-sp12: enable EL2 dtb
+f83870367b31	arm64: dts: qcom: x1e80100: add empty mdss_dp3_out endpoint
+c879b0f8dfd0	arm64: dts: qcom: x1-acer-swift-14: add dp link frequencies, enable 4 lanes on type-c
+c6b5d7646bcc	arm64: dts: qcom: x1-asus-zenbook-a14: Add missing pinctrl for eDP HPD
+0a45ef26a5fd	arm64: dts: qcom: x1e78100-lenovo-thinkpad-t14s: Add missing pinctrl for eDP HPD
+e539613a1250	arm64: dts: qcom: x1e80100: add empty mdss_dp3_out endpoint
+b70dd6852e41	drm/msm/dp: force always train DP aux link on activation
+4caf2b217323	arm64: dts: qcom: x1p42100-ideapad-5: minor fixes
+a39508af0aa2	arm64: dts: qcom: x126100-ideapad-slim3: Add Support for Ideapad Slim 3 15Q8X10
+07091ff41ee1	HACK: set compatible string for Ideapad 5 dtbs to boot from Ubuntu Concept ISO
+ce3d4574c8ca	arm64: dts: qcom: x1p42100-ideapad-5: minor fixes again
+5ed2bafee312	arm64: dts: qcom: x126100-ideapad-slim3: try the common sense approach
+f8ddfbe17a68	arm64: dts: qcom: x126100-ideapad-slim3: touchpad apparently has tlmm 67
+abf0865ef03e	arm64: dts: qcom: x126100-ideapad-slim3: disable touchpad gpio
+395d5d1da6a4	arm64: dts: qcom: x1e78100-t14s: add second-source touchscreen @41
+5551931d717e	arm64: dts: qcom: x1e80100-asus-zenbook-a14: delete unused files
+24d0e17f17d2	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add headset mode mux
+ba34a33aacf9	phy: qcom: qmp-combo: Add explicit initial mode for static bridges
+ae0805597758	phy: qcom: qmp-combo: fixup: add missing else statement
+afaf841301f4	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hdmi bridge with enable pin
+d4d50278ceb5	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: force usb2-only mode on usb_1_ss2_dwc3
+a4929cb85232	phy: qcom: qmp-combo: Move pipe_clk on/off to common
+1c50ff070cc6	phy: qcom: qmp-combo: change disable order in qmp_combo_com_exit
+59246acb6fda	arm64: dts: qcom: x1e80100: correct usage of edp0_hpd_default pinctrl
+c916b35a7931	Revert "arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add hpd gpio to dp controller, fix backlight"
+657efac4dd3e	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: re-add edp0_hpd_default pinctrl
+43c2ea05604a	dt-bindings: arm: qcom: Add TUXEDO Computers device
+830c3f738cae	dt-bindings: arm: qcom: Add Medion SPRCHRGD device
+de6bb84643dd	arm64: dts: qcom: follow `hamoa` rename
+4bdb20c78bd6	arm64: dts: qcom: x1-vivobook-s15: add HDMI port and charge limiting
+86fd33290612	arm64: dts: qcom: medion-sprchrgd-14-s1: add Thinkpad T14s compatible
+ac025eab62cf	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: move hdmi_bridge_en to gpio120
+a532a036e8cc	arm64: dts: qcom: medion-sprchrgd-14-s1: extend gpio-reserved-ranges
+58cc66a37d14	arm64: dts: qcom: x1p42100-ideapad-slim5x: Split for OLED and LCD variants
+b464e299eea3	arm64: dts: qcom: x126100-ideapad-slim3: fix up mic channels and vregs
+aee3dd827842	arm64: dts: qcom: medion-sprchrgd-14-s1: remove Soundwire on DP
+e6467b4f921e	drm/msm/dpu/x1e80100: change clk_inefficiency_factor to 104
+2f716d1a11e6	arm64: dts: qcom: amend dtsi names to haoma, purwa
+65c9c2cff364	phy: qcom: qmp-combo: Prevent unnecessary PM runtime suspend at boot
+54bd0eb9f539	arm64: dts: qcom: Add support for X1P42100-based Surface Pro 11
+caa688933a14	arm64: dts: qcom: x1-denali: separate firmware paths from dtsi
+5e32b150730f	arm64: dts: qcom: x1-denali: efivars: add lenovo,thinkpad-t14s compatible for older kernels
+0824406ab556	arm64: dts: qcom: x1-microsoft-denali: Disable rfkill for wifi0
+d6e6bc2df2f1	HACK: Workaround suspend/resume issues on SP11
+1accb01b79a3	arm64: dts: qcom: x1p-denali: add backlight pwm wiring
+e472ff6218b6	arm64: dts: qcom: x1p42100-sp12: iteration from original sp12 dt
+0d80cc19269c	arm64: dts: qcom: Un-hallucinate X1P42100-based Surface Pro 11
+832366ff28ca	arm64: dts: qcom: sm8550: Fix xo clock supply of platform SD host controller
+d1b173bbd18e	arm64: dts: qcom: sm8650: Fix xo clock supply of SD host controller
+7bdec3401b6c	arm64: dts: qcom: hamoa: Fix xo clock supply of platform SD host controller
+1e69844e32b0	arm64: dts: qcom: sm8450: Enable UHS-I SDR50 and SDR104 SD card modes
+2481620e1b2b	arm64: dts: qcom: sm8550: Enable UHS-I SDR50 and SDR104 SD card modes
+0f165f9e2c71	arm64: dts: qcom: sm8650: Enable UHS-I SDR50 and SDR104 SD card modes
+6068c5b2c3e6	arm64: dts: qcom: x1-el2: add 40-bit dma-ranges/ranges for EL2
+a72a074b3d10	dt-bindings: platform: introduce EC for Dell XPS 13 9345
+91f3b026391c	platform: arm64: dell-xps-ec: new driver
+86a28becc6b3	arm64: dts: qcom: hamoa-pmics: define VADC for pmk8550
+68b831288f1d	arm64: dts: qcom: x1e80100-dell-xps13-9345: introduce EC
+910905bda7ca	dt-bindings: iio: adc: Split out QCOM VADC channel properties
+2adac779ce71	dt-bindings: iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+bd9bfcbca69c	iio: adc: Add support for QCOM PMIC5 Gen3 ADC
+5874b0aff67b	thermal: qcom: add support for PMIC5 Gen3 ADC thermal monitoring
+c34c5cef61ea	arm64: dts: qcom: x126100-ideapad-slim3: define vreg_pcie3_nvme_3p3
+cb7ea5d97d56	dt-bindings: embedded-controller: Add Qualcomm reference device EC description
+68bc08b8db76	platform: arm64: Add driver for EC found on Qualcomm reference devices
+47ebabf7c373	arm64: dts: qcom: glymur-crd: Add Embedded controller node
+4e8a0b7dde7f	arm64: dts: qcom: x1-crd: Add Embedded controller node
+2a387a225fbf	arm64: dts: qcom: hamoa-iot-evk: Add Embedded controller node
+27d017ea3120	arm64: dts: qcom: x126100-ideapad-slim3: Add Embedded controller node
+a4286015e9a0	arm64: dts: qcom: x126100-ideapad-slim3: remove smb2360_1
+e30eededb245	arm64: dts: qcom: x126100-ideapad-slim3: enable nvme regs as always on
+f366f0fac773	fix ufs spam
+813a2d43b16f	ASoC: qcom: q6apm: remove child devices when apm is removed
+a0e4c7abb841	ASoC: qcom: qdsp6: topology: check widget type before accessing data
+c80819e94901	ASoC: qcom: q6apm-lpass-dai: Fix multiple graph opens
+1a1affa4fd0b	ASoC: qcom: q6apm-dai: reset queue ptr on trigger stop
+90da013e655e	ASoC: dt-bindings: qcom: add LPASS LPI MI2S dai ids
+76442e31ed7a	ASoC: qcom: common: validate cpu dai id during parsing
+c6be831dbea0	ASoC: qcom: qdsp6: lpass-ports: add support for LPASS LPI MI2S dais
+59c2e0a87704	ASoC: qcom: q6dsp: Add Senary MI2S audio interface support
+b6bd1f2ebb45	ASoC: qcom: qdapm-lpass-dai: correct the error message
+b01ec1727d29	ASoC: qcom: q6apm-lpass-dai: move graph start to trigger
+72b34bed8486	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: add displayport backend DAIs
+8cbcf81e5635	drm/msm/dp: implement dp_audio_startup to guard against unconnected state
+e84c55ce8316	arm64: dts: qcom: x1p42100-lenovo-thinkbook-16: enable gpi_dma controllers
+bc2e6b501a3b	arm64: dts: qcom: hamoa: add audio PD remote heap region
+2db15c398aba	usb: typec: mux: ps883x: Power the retimer off when not in use
+1bda56d5debb	ASoC: qcom: x1e80100: limit speaker volumes
+312a7a3478a1	dts: qcom: Add surface pro 12inch device tree
+8c5395f5010c	clk: qcom: x1e80100-dispcc: Stop disp_cc_mdss_mdp_clk_src from getting parked
+6ad5d0d09a8d	clk: qcom: dispcc-sc8280xp: Don't park mdp_clk_src at registration time
+b2f709985c8b	arm64: dts: qcom: sc8280xp-blackrock: rework audio section
+a33ae195e88a	drm/msm/dpu: Add DSPP GC driver to provide GAMMA_LUT DRM property
+72508b8ba1f0	drm/msm/dpu: fix mismatch between power and frequency
+7ca393105ac7	arm64: dts: x1e001de-devkit: add sgerhold's final dt, update -jg variant for sound
+10af660ce3e5	arm64: dts: make changes for x1e001de-devkit
+297c406a15f8	arm64: dts: qcom: x1e001-devkit-jg: add dp sound DAIs
+431856f53ff3	Update ufs to match current upstream
+e6a4bdee4e29	update sam sp12 to remove missiing devices
+503e6872038d	arm64: dts: qcom: hamoa: re-add ICE and link to ufs controller
+54f45683dfc3	arm64: dts: qcom: hamoa: Disable crypto blocks by default
+3fa439196e79	arm64: dts: qcom: microsoft-sp12: enable ICE node
+50e80a04ef9a	arm64: dts: qcom: microsoft-sp12: add dp altmode retimers
+7f09e0f67dc3	update sp12.dts
+7f92331918f9	arm64: dts: qcom: microsoft-sp12: refine the working patch from Harrison
+259ed7718864	dts: arm64: qcom: x1-ideapad-slim3: add 2s startup-delay on pcie3 vreg
+8dc6d66915bd	arm64: dts: qcom: microsoft-sp12: add DisplayPort DAIs
+11ae2a6dffe9	arm64: dts: qcom: x1p42100-ideapad-slim5x: Fix display brightness regression
+ceab637ac377	arm64: dts: qcom: x1: Add x1-el2-pas.dtso for PAS-managed remoteproc
+813fde45e579	arm64: dts: qcom: idepad-5-2in1: remove backlight gpio
+f821b988feab	arm64: dts: qcom: idepad-5-2in1: enable hdmi, fp-reader, dp sound
+211ee21e2ff8	arm64: dts: qcom: idepad-slim5x: update from working ip5 2in1
+d0f38cd09a44	drm/msm/dp: Do not fail audio prepare when DP is inactive
+fb231dc71fc9	arm64: dts: qcom: x1e001-devkit-jg: add variant from 6.19.y
+91ce372292b6	arm64: dts: qcom: x1-asus-vivobook-s15: add 4-speaker 3-dp sound nodes
+8d1b68a92a50	arm64: dts: qcom: sc8280xp-blackrock: correct usb phy power supply
