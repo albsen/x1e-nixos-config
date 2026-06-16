@@ -2,9 +2,25 @@
 
 This repo targets the T14S 64GB RAM OLED snapdragon XElite laptop.
 
+Based on https://github.com/kuruczgy/x1e-nixos-config
+
 Add tcblaunch.exe by placing it in the root of this repo and running.
 
 ```console
+./scripts/add-tcblaunch.sh
+```
+
+To keep a local encrypted backup outside Git, create a password-protected
+archive:
+
+```console
+./scripts/create-vendor-archive.sh
+```
+
+Restore it later with:
+
+```console
+./scripts/restore-vendor-dependencies.sh
 ./scripts/add-tcblaunch.sh
 ```
 
@@ -14,6 +30,29 @@ Building the iso:
 nix build '.#lenovo-thinkpad-t14s-iso' '.#slbounce' '.#qebspil'
 ```
 
+Graphical installer flow:
+
+1. Boot the USB stick using the working OLED EL2 entry.
+2. Run the graphical installer as usual. Let it handle partitioning, users,
+   locale, desktop selection, and the generated hardware config.
+3. After the installer completes, mount the installed system from a terminal
+   in the live environment and run the post-install script:
+
+```console
+sudo -i
+mount /dev/disk/by-label/<root-label> /mnt
+mkdir -p /mnt/boot
+mount /dev/disk/by-label/<efi-label> /mnt/boot
+/x1e-nixos-config/scripts/install-t14s-oled-el2-kernel.sh
+```
+
+The script copies this repo into `/mnt/etc/nixos/x1e-nixos-config`, adds an
+`x1e-t14s-oled-el2.nix` module to the generated installed-system config, enables
+the ThinkPad T14s OLED device support and EL2 boot support, then reruns
+`nixos-install` for `/mnt`.
+
+Use `--no-install` if you only want to update the generated config files without
+rerunning `nixos-install`.
 
 ## Other projects with support for Snapdragon X Elite devices
 

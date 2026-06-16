@@ -7,6 +7,17 @@
 
 let
   cfg = config.hardware;
+  tcblaunch = pkgs.requireFile {
+    name = "tcblaunch.exe";
+    sha256 = "sha256-RjUg4ZWB2pZINLTwexkwNmXccB3jHGrXSO+MvRMz5Ug=";
+    message = ''
+      tcblaunch.exe is required for EL2 boot support.
+
+      Place tcblaunch.exe in the repository root and run:
+
+        ./scripts/add-tcblaunch.sh
+    '';
+  };
   thinkpadT14sEnabled = cfg.lenovo-thinkpad-t14s.enable || cfg.lenovo-thinkpad-t14s-oled.enable;
   thinkpadT14sKernelParams = [
     "clk_ignore_unused"
@@ -81,6 +92,7 @@ in
 
     boot.loader.systemd-boot.extraFiles = {
       "EFI/systemd/drivers/slbounceaa64.efi" = "${pkgs.slbounce}/slbounce.efi";
+      "EFI/systemd/drivers/tcblaunch.exe" = tcblaunch;
       "EFI/systemd/drivers/qebspilaa64.efi" = lib.mkIf (
         config.x1e.el2.qebspilFirmwareFiles != [ ]
       ) "${pkgs.qebspil}/qebspilaa64.efi";
