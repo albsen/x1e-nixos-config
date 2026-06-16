@@ -30,6 +30,18 @@ Building the iso:
 nix build '.#lenovo-thinkpad-t14s-iso' '.#slbounce' '.#qebspil'
 ```
 
+Remote install over SSH:
+
+The ISO includes an SSH server for remote installs with tools such as
+`nixos-anywhere`. Add public keys to this file on the USB stick:
+
+```text
+ssh/authorized_keys
+```
+
+At boot, the live system imports that file into `/root/.ssh/authorized_keys`.
+SSH password login is disabled; only keys from the USB file are accepted.
+
 Graphical installer flow:
 
 1. Boot the USB stick using the working OLED EL2 entry.
